@@ -12,7 +12,7 @@ export default function Navigation(){
                 <li className="hover:text-[#6A040F] hover:transition-colors">Experience</li>
                 <li className="hover:text-[#6A040F] hover:transition-colors">Projects</li>
                 <li className="hover:text-[#6A040F] hover:transition-colors">Contact</li>
-                <li className="border-2 p-2 border-[#6A040F] text-[#6A040F] font-bold">Resume</li>
+                <li className="border-2 p-2 bg-[#6A040F] border-[#6A040F] text-[white] font-bold">Resume</li>
             </ul>
         </div>
         <main>
@@ -21,7 +21,7 @@ export default function Navigation(){
                 <h1 className="uppercase font-bold text-[#264653] text-5xl md:text-7xl">Muwanguzi Joshua.</h1>
                 <h2 className="text-[#3c6e71] py-4 text-4xl md:text-5xl font-bold">I build software for the web.</h2>
                 <p className="text-[#2b2d42] lg:w-1/2 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab natus enim itaque, harum iusto eum tempora voluptate aut quia consequuntur veritatis eos corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non labore nulla natus quas illum eligendi!</p>
-                <button className="uppercase mt-8 text-[#6A040F] border-2 p-2 border-[#6A040F] font-bold">Contact Me</button>
+                <button className="uppercase mt-8 text-white border-2 p-2 bg-[#6A040F] border-[#6A040F] font-bold">Contact Me</button>
             </div>
 
 
@@ -35,16 +35,16 @@ export default function Navigation(){
                     <div className="mt-8 lg:mt-0 lg:w-1/2">
                         <h3 className="text-[#3c6e71] text-3xl font-bold">My Skills</h3>
                         <ul className="mt-4 mb-4 md:grid md:grid-cols-2 gap-4 lg:gap-6 flex flex-col">
-                            <li className="bg-[#f8f9fa] border-white p-3 text-[#6A040F] text-center text-xl font-bold border rounded bg-opacity-70 shadow-md">React</li>
-                            <li className="bg-[#f8f9fa] border-white p-3 text-[#6A040F] text-center text-xl font-bold border rounded bg-opacity-70 shadow-md">Python</li>
-                            <li className="bg-[#f8f9fa] border-white p-3 text-[#6A040F] text-center text-xl font-bold border rounded bg-opacity-70 shadow-md">Javascript</li>
-                            <li className="bg-[#f8f9fa] border-white p-3 text-[#6A040F] text-center text-xl font-bold border rounded bg-opacity-70 shadow-md">AWS Lambda</li>
-                            <li className="bg-[#f8f9fa] border-white p-3 text-[#6A040F] text-center text-xl font-bold border rounded bg-opacity-70 shadow-md">Dynamodb</li>
-                            <li className="bg-[#f8f9fa] border-white p-3 text-[#6A040F] text-center text-xl font-bold border rounded bg-opacity-70 shadow-md">AWS AppSync</li>
-                            <li className="bg-[#f8f9fa] border-white p-3 text-[#6A040F] text-center text-xl font-bold border rounded bg-opacity-70 shadow-md">Fast API</li>
-                            <li className="bg-[#f8f9fa] border-white p-3 text-[#6A040F] text-center text-xl font-bold border rounded bg-opacity-70 shadow-md">Django</li>
-                            <li className="bg-[#f8f9fa] border-white p-3 text-[#6A040F] text-center text-xl font-bold border rounded bg-opacity-70 shadow-md">SQL</li>
-                            <li className="bg-[#f8f9fa] border-white p-3 text-[#6A040F] text-center text-xl font-bold border rounded bg-opacity-70 shadow-md">SQL</li>
+                            <li className="bg-[#f8f9fa] border-2 border-[#6A040F] p-3 text-[#6A040F] text-center text-xl font-bold  rounded bg-opacity-70 shadow-md">React</li>
+                            <li className="bg-[#f8f9fa] border-2 border-[#6A040F] p-3 text-[#6A040F] text-center text-xl font-bold  rounded bg-opacity-70 shadow-md">Python</li>
+                            <li className="bg-[#f8f9fa] border-2 border-[#6A040F] p-3 text-[#6A040F] text-center text-xl font-bold  rounded bg-opacity-70 shadow-md">Javascript</li>
+                            <li className="bg-[#f8f9fa] border-2 border-[#6A040F] p-3 text-[#6A040F] text-center text-xl font-bold  rounded bg-opacity-70 shadow-md">AWS Lambda</li>
+                            <li className="bg-[#f8f9fa] border-2 border-[#6A040F] p-3 text-[#6A040F] text-center text-xl font-bold  rounded bg-opacity-70 shadow-md">Dynamodb</li>
+                            <li className="bg-[#f8f9fa] border-2 border-[#6A040F] p-3 text-[#6A040F] text-center text-xl font-bold  rounded bg-opacity-70 shadow-md">AWS AppSync</li>
+                            <li className="bg-[#f8f9fa] border-2 border-[#6A040F] p-3 text-[#6A040F] text-center text-xl font-bold  rounded bg-opacity-70 shadow-md">Fast API</li>
+                            <li className="bg-[#f8f9fa] border-2 border-[#6A040F] p-3 text-[#6A040F] text-center text-xl font-bold  rounded bg-opacity-70 shadow-md">Django</li>
+                            <li className="bg-[#f8f9fa] border-2 border-[#6A040F] p-3 text-[#6A040F] text-center text-xl font-bold  rounded bg-opacity-70 shadow-md">SQL</li>
+                            <li className="bg-[#f8f9fa] border-2 border-[#6A040F] p-3 text-[#6A040F] text-center text-xl font-bold  rounded bg-opacity-70 shadow-md">SQL</li>
                         </ul>
                     </div>
                 </div>
