@@ -19,7 +19,7 @@ export default function Navigation(){
             <div className="container py-24 md:py-48">
                 <h5 className="mb-2 text-[#6A040F] text-2xl">Hello there, my name is</h5>
                 <h1 className="uppercase font-bold text-[#264653] text-5xl md:text-7xl">Muwanguzi Joshua.</h1>
-                <h2 className="text-[#3c6e71] py-4 text-4xl md:text-5xl font-bold">I build software for the web.</h2>
+                <h2 className="text-[#3c6e71] py-8 md:py-4 text-4xl md:text-5xl font-bold">I build software for the web.</h2>
                 <p className="text-[#2b2d42] lg:w-1/2 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab natus enim itaque, harum iusto eum tempora voluptate aut quia consequuntur veritatis eos corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non labore nulla natus quas illum eligendi!</p>
                 <button className="uppercase mt-8 text-[#6A040F] border-2 p-2 border-[#6A040F] font-bold">Contact Me</button>
             </div>
@@ -29,12 +29,12 @@ export default function Navigation(){
                 <h2 className="text-4xl md:text-5xl font-bold text-[#264653] mb-4 md:mb-8"><span className="text-8xl text-[#6A040F]">.</span>About Me</h2>
                 <div className="lg:flex justify-between">
                     <div className="lg:w-1/2">
-                        <h3 className="text-[#3c6e71] text-3xl font-bold">My Background</h3>
-                        <p className="my-4 text-[#2b2d42] lg:pr-12 text-xl lg:mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iure asperiores quisquam reprehenderit architecto iste laborum fugiat illum, vitae similique, et dignissimos vel! Atque alias, saepe libero modi omnis error?<br/><br/> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora mollitia doloribus natus possimus sed laborum assumenda commodi alias iste. Soluta, eum voluptas perspiciatis error id cupiditate hic impedit nobis nisi! <br/>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, vel.</p>
+                        <h3 className="text-[#3c6e71] text-3xl font-bold pb-6">My Background</h3>
+                        <p className="text-[#2b2d42] lg:pr-12 text-xl pb-4 lg:pb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iure asperiores quisquam reprehenderit architecto iste laborum fugiat illum, vitae similique, et dignissimos vel! Atque alias, saepe libero modi omnis error?<br/><br/> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora mollitia doloribus natus possimus sed laborum assumenda commodi alias iste. Soluta, eum voluptas perspiciatis error id cupiditate hic impedit nobis nisi! <br/>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, vel.</p>
                     </div>
                     <div className="mt-8 lg:mt-0 lg:w-1/2">
-                        <h3 className="text-[#3c6e71] text-3xl font-bold">My Skills</h3>
-                        <ul className="my-4 md:grid md:grid-cols-3 gap-4 flex flex-col">
+                        <h3 className="text-[#3c6e71] text-3xl font-bold pb-6">My Skills</h3>
+                        <ul className="md:grid md:grid-cols-3 gap-4 flex flex-col">
                             <li className="bg-[#f8f9fa] border-2 border-[#6A040F] px py-2 text-[#2b2d42] text-center text-xl  rounded bg-opacity-70 shadow-md">React</li>
                             <li className="bg-[#f8f9fa] border-2 border-[#6A040F] px py-2 text-[#2b2d42] text-center text-xl  rounded bg-opacity-70 shadow-md">Python</li>
                             <li className="bg-[#f8f9fa] border-2 border-[#6A040F] px py-2 text-[#2b2d42] text-center text-xl  rounded bg-opacity-70 shadow-md">Javascript</li>
