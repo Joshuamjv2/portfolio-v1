@@ -35,16 +35,16 @@ export default function Navigation(){
                     <div className="mt-8 lg:mt-0 lg:w-1/2">
                         <h3 className="text-[#3c6e71] text-3xl font-bold">My Skills</h3>
                         <ul className="my-4 md:grid md:grid-cols-3 gap-4 flex flex-col">
-                            <li className="bg-[#f8f9fa] border-2 border-[#6A040F] px py-2 text-[#6A040F] text-center text-xl font-bold  rounded bg-opacity-70 shadow-md">React</li>
-                            <li className="bg-[#f8f9fa] border-2 border-[#6A040F] px py-2 text-[#6A040F] text-center text-xl font-bold  rounded bg-opacity-70 shadow-md">Python</li>
-                            <li className="bg-[#f8f9fa] border-2 border-[#6A040F] px py-2 text-[#6A040F] text-center text-xl font-bold  rounded bg-opacity-70 shadow-md">Javascript</li>
-                            <li className="bg-[#f8f9fa] border-2 border-[#6A040F] px py-2 text-[#6A040F] text-center text-xl font-bold  rounded bg-opacity-70 shadow-md col-span-2">AWS Lambda</li>
-                            <li className="bg-[#f8f9fa] border-2 border-[#6A040F] px py-2 text-[#6A040F] text-center text-xl font-bold  rounded bg-opacity-70 shadow-md">Dynamodb</li>
-                            <li className="bg-[#f8f9fa] border-2 border-[#6A040F] px py-2 text-[#6A040F] text-center text-xl font-bold  rounded bg-opacity-70 shadow-md col-span-2">AWS AppSync</li>
-                            <li className="bg-[#f8f9fa] border-2 border-[#6A040F] px py-2 text-[#6A040F] text-center text-xl font-bold  rounded bg-opacity-70 shadow-md">Fast API</li>
-                            <li className="bg-[#f8f9fa] border-2 border-[#6A040F] px py-2 text-[#6A040F] text-center text-xl font-bold  rounded bg-opacity-70 shadow-md">Django</li>
-                            <li className="bg-[#f8f9fa] border-2 border-[#6A040F] px py-2 text-[#6A040F] text-center text-xl font-bold  rounded bg-opacity-70 shadow-md">SQL</li>
-                            <li className="bg-[#f8f9fa] border-2 border-[#6A040F] px py-2 text-[#6A040F] text-center text-xl font-bold  rounded bg-opacity-70 shadow-md">SQL</li>
+                            <li className="bg-[#f8f9fa] border-2 border-[#6A040F] px py-2 text-[#2b2d42] text-center text-xl  rounded bg-opacity-70 shadow-md">React</li>
+                            <li className="bg-[#f8f9fa] border-2 border-[#6A040F] px py-2 text-[#2b2d42] text-center text-xl  rounded bg-opacity-70 shadow-md">Python</li>
+                            <li className="bg-[#f8f9fa] border-2 border-[#6A040F] px py-2 text-[#2b2d42] text-center text-xl  rounded bg-opacity-70 shadow-md">Javascript</li>
+                            <li className="bg-[#f8f9fa] border-2 border-[#6A040F] px py-2 text-[#2b2d42] text-center text-xl  rounded bg-opacity-70 shadow-md col-span-2">AWS Lambda</li>
+                            <li className="bg-[#f8f9fa] border-2 border-[#6A040F] px py-2 text-[#2b2d42] text-center text-xl  rounded bg-opacity-70 shadow-md">Dynamodb</li>
+                            <li className="bg-[#f8f9fa] border-2 border-[#6A040F] px py-2 text-[#2b2d42] text-center text-xl  rounded bg-opacity-70 shadow-md col-span-2">AWS AppSync</li>
+                            <li className="bg-[#f8f9fa] border-2 border-[#6A040F] px py-2 text-[#2b2d42] text-center text-xl  rounded bg-opacity-70 shadow-md">Fast API</li>
+                            <li className="bg-[#f8f9fa] border-2 border-[#6A040F] px py-2 text-[#2b2d42] text-center text-xl  rounded bg-opacity-70 shadow-md">Django</li>
+                            <li className="bg-[#f8f9fa] border-2 border-[#6A040F] px py-2 text-[#2b2d42] text-center text-xl  rounded bg-opacity-70 shadow-md">SQL</li>
+                            <li className="bg-[#f8f9fa] border-2 border-[#6A040F] px py-2 text-[#2b2d42] text-center text-xl  rounded bg-opacity-70 shadow-md">SQL</li>
                         </ul>
                     </div>
                 </div>
