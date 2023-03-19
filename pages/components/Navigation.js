@@ -7,7 +7,7 @@ export default function Navigation(){
     <>
         <div className='flex items-center justify-between px-12 md:px-24 pt-4 md:pt-8'>
             <Image src={logo} height={80}/>
-            <ul className='md:flex text-[#3c6e71] gap-6 xl:gap-24 font-medium uppercase sm:hidden md:visible items-center cursor-pointer'>
+            <ul className='md:flex text-[#3c6e71] gap-6 xl:gap-24 font-medium uppercase hidden md:visible items-center cursor-pointer'>
                 <li className="hover:text-[#6A040F] hover:transition-colors">About</li>
                 <li className="hover:text-[#6A040F] hover:transition-colors">Experience</li>
                 <li className="hover:text-[#6A040F] hover:transition-colors">Projects</li>
@@ -30,11 +30,11 @@ export default function Navigation(){
                 <div className="lg:flex justify-between">
                     <div className="lg:w-1/2">
                         <h3 className="text-[#3c6e71] text-3xl font-bold">My Background</h3>
-                        <p className="mt-4 text-[#2b2d42] lg:pr-12 text-xl mb-4 lg:mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iure asperiores quisquam reprehenderit architecto iste laborum fugiat illum, vitae similique, et dignissimos vel! Atque alias, saepe libero modi omnis error?<br/><br/> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora mollitia doloribus natus possimus sed laborum assumenda commodi alias iste. Soluta, eum voluptas perspiciatis error id cupiditate hic impedit nobis nisi! <br/>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, vel.</p>
+                        <p className="my-4 text-[#2b2d42] lg:pr-12 text-xl lg:mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iure asperiores quisquam reprehenderit architecto iste laborum fugiat illum, vitae similique, et dignissimos vel! Atque alias, saepe libero modi omnis error?<br/><br/> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora mollitia doloribus natus possimus sed laborum assumenda commodi alias iste. Soluta, eum voluptas perspiciatis error id cupiditate hic impedit nobis nisi! <br/>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, vel.</p>
                     </div>
                     <div className="mt-8 lg:mt-0 lg:w-1/2">
                         <h3 className="text-[#3c6e71] text-3xl font-bold">My Skills</h3>
-                        <ul className="mt-4 mb-4 md:grid md:grid-cols-3 gap-2 lg:gap-4 flex flex-col">
+                        <ul className="my-4 md:grid md:grid-cols-3 md:gap-4 flex flex-col">
                             <li className="bg-[#f8f9fa] border-2 border-[#6A040F] px py-2 text-[#6A040F] text-center text-xl font-bold  rounded bg-opacity-70 shadow-md">React</li>
                             <li className="bg-[#f8f9fa] border-2 border-[#6A040F] px py-2 text-[#6A040F] text-center text-xl font-bold  rounded bg-opacity-70 shadow-md">Python</li>
                             <li className="bg-[#f8f9fa] border-2 border-[#6A040F] px py-2 text-[#6A040F] text-center text-xl font-bold  rounded bg-opacity-70 shadow-md">Javascript</li>
