@@ -1,0 +1,20 @@
+<div className='px-12 py-3 max-w-4xl mx-12 my-6 container'>
+        <h2 className='font-bold'>Background - #fefae0</h2>
+        {/* <h1 className='font-bold text-3xl pb-8'>Titles</h1> */}
+        <h2 className='font-bold text-4xl text-[#3c6e71]'>Joshua Bryant. #3c6e71</h2>
+        <h2 className='font-bold text-4xl text-[#264653]'>Joshua Bryant. #264653</h2>
+        <h2 className='font-bold text-4xl text-[#023047] mb-8'>Joshua Bryant. #023047</h2>
+
+        {/* <h1 className='font-bold text-3xl py-8'>Paragraphs</h1> */}
+        <p className='font-bold content'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non autem architecto quos commodi dolore natus omnis repudiandae eum ipsa. -- #000000</p>
+        <p className='font-bold content mt-4 text-[#343a40]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non autem architecto quos commodi dolore natus omnis repudiandae eum ipsa -- #343a40</p>
+
+        <p className='font-bold content mt-4 text-[#2b2d42] mb-8'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non autem architecto quos commodi dolore natus omnis repudiandae eum ipsa -- #2b2d42</p>
+
+        <p className='uppercase bg-[#6a040f] text-white font-bold text-2xl px-2  pr-2 my-2'>Contact - #6a040f</p>
+        <p className='uppercase bg-[#bc4749] text-[#fefae0] font-bold text-2xl px-2  pr-2'>Contact - #6a040f</p>
+        <p className='uppercase  bg-[#772e25] text-[#fefae0] font-bold text-2xl px-2  pr-2 my-2'>Contact - #6a040f</p>
+        <p className='uppercase bg-[#FF0000] text-[#fefae0] font-bold text-2xl px-2  pr-2'>Contact - #6a040f</p>
+        <p className='uppercase  bg-[#FF8080] text-[#fefae0] font-bold text-2xl px-2  pr-2 my-2'>Contact - #FF8080</p>
+        <p className='uppercase  bg-[#8B51FF] text-[#fefae0] font-bold text-2xl px-2  pr-2 my-2'>Contact - #6a040f</p>
+      </div>
