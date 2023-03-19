@@ -12,16 +12,16 @@ export default function Navigation(){
                 <li className="hover:text-[#6A040F] hover:transition-colors">Experience</li>
                 <li className="hover:text-[#6A040F] hover:transition-colors">Projects</li>
                 <li className="hover:text-[#6A040F] hover:transition-colors">Contact</li>
-                <li className="border-2 p-2 border-[#6A040F] text-[#6A040F] font-bold">Resume</li>
+                <li className="border-2 p-2 border-[#6A040F] text-[#6A040F] font-bold hover:mb-2 hover:transition-all duration-300">Resume</li>
             </ul>
         </div>
         <main>
-            <div className="container py-24 md:py-48">
+            <div className="container py-24 md:pb-48">
                 <h5 className="mb-2 text-[#6A040F] text-2xl">Hello there, my name is</h5>
                 <h1 className="uppercase font-bold text-[#264653] text-5xl md:text-7xl">Muwanguzi Joshua.</h1>
                 <h2 className="text-[#3c6e71] py-8 md:py-4 text-4xl md:text-5xl font-bold">I build software for the web.</h2>
                 <p className="text-[#2b2d42] lg:w-1/2 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab natus enim itaque, harum iusto eum tempora voluptate aut quia consequuntur veritatis eos corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non labore nulla natus quas illum eligendi!</p>
-                <button className="uppercase mt-8 text-[#6A040F] border-2 p-2 border-[#6A040F] font-bold">Contact Me</button>
+                <button className="uppercase mt-8 text-[#6A040F] border-2 p-2 border-[#6A040F] font-bold hover:mt-7 hover:transition-all duration-300">Contact Me</button>
             </div>
 
 
@@ -62,17 +62,18 @@ export default function Navigation(){
                 <div className="text-center">
                     <h2 className="font-bold text-[#264653] text-4xl">Get in touch</h2>
                     <p className="my-8 md:w-1/2 md:mx-auto text-xl text-[#2b2d42]">Reach out to me about collaborations, opportunities, <br/>music, football, or anything I can help with. <br/>Enjoy your day!!</p>
-                    <ul className="flex justify-center gap-12">
-                        <li className="cursor-pointer"><FontAwesomeIcon icon={['fab', 'github']} style={{ fontSize: 30, color: "#6A040F" }} /></li>
+                    <ul className="flex justify-center gap-12 mb-2">
+                        <li className="cursor-pointer"><FontAwesomeIcon icon={['fab', 'github']} style={{ fontSize: 30, color: "#6A040F" }}/></li>
                         <li className="cursor-pointer"><FontAwesomeIcon icon={['fab', 'instagram']} style={{ fontSize: 30, color: "#6A040F" }} /></li>
                         <li className="cursor-pointer"><FontAwesomeIcon icon={['fab', 'twitter']} style={{ fontSize: 30, color: "#6A040F" }} /></li>
                         <li className="cursor-pointer"><FontAwesomeIcon icon={['fab', 'linkedin']} style={{ fontSize: 30, color: "#6A040F" }} /></li>
                     </ul>
                 </div>
+
                 <div className="border-t border-[#6A040F] mt-10 md:flex text-center justify-between items-center pb-8 md:pb-12  text-[#3c6e71]">
-                    {/* <p>Made By: <span>Muwanguzi Joshua</span></p> */}
-                    <p className="font-medium pt-2 md:pt-4 md:text-xl">&copy;{new Date().getFullYear()} <span className="text-[#6A040F] hover:font-medium cursor-pointer font-normal hover:transition-all">Muwanguzi Joshua</span></p>
-                    <p className="font-medium pt-2 md:pt-4 md:text-xl">Inspired By: <span className="text-[#6A040F] hover:font-medium cursor-pointer font-normal hover:transition-all">Brittany Chiang</span> & <span className="text-[#6A040F] hover:font-medium cursor-pointer font-normal hover:transition-all">Ram Maheshwari</span></p>
+                        {/* <p>Made By: <span>Muwanguzi Joshua</span></p> */}
+                        <p className="font-medium pt-2 md:pt-4 md:text-xl">&copy;{new Date().getFullYear()} <span className="text-[#6A040F] hover:font-medium cursor-pointer font-normal hover:transition-all">Muwanguzi Joshua</span></p>
+                        <p className="font-medium pt-2 md:pt-4 md:text-xl">Inspired By: <span className="text-[#6A040F] hover:font-medium cursor-pointer font-normal hover:transition-all">Brittany Chiang</span> & <span className="text-[#6A040F] hover:font-medium cursor-pointer font-normal hover:transition-all">Ram Maheshwari</span></p>
                 </div>
             </footer>
         </main>
