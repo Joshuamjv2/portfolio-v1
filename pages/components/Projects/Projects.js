@@ -14,6 +14,20 @@ const projects = [
         github: "Github",
         live: "Live",
         image: "url('/images/music-section.jpg')"
+    },
+    {
+        title: "BookSalon",
+        detail: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde architecto vero ad quibusdam magnam officiis mollitia? Pariatur dolorem dolore",
+        github: "Github",
+        live: "Live",
+        image: "url('/images/music-section.jpg')"
+    },
+    {
+        title: "BookSalon",
+        detail: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde architecto vero ad quibusdam magnam officiis mollitia? Pariatur dolorem dolore",
+        github: "Github",
+        live: "Live",
+        image: "url('/images/music-section.jpg')"
     }
 ]
 
