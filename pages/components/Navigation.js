@@ -74,7 +74,7 @@ export default function Navigation(){
             <Projects />
 
             <footer className="container">
-                <div className="text-center mb-20">
+                <div className="text-center my-24">
                     <h2 className="font-bold text-[#264653] text-2xl md:text-4xl">Get in touch</h2>
                     <p className="my-4 md:my-8 lg:w-1/2 lg:mx-auto md:text-xl text-[#2b2d42]">Reach out to me about collaborations, opportunities, <br/>music, football, or anything I can help with. <br/>Enjoy your day!!</p>
                     <ul className="flex justify-center gap-8 md:gap-12">

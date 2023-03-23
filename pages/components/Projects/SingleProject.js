@@ -18,7 +18,7 @@ export default function SingleProject({title, detail, github, live, image}) {
         <div className="md:flex gap-4">
             <div className="w-full md:w-10/12 h-96 relative" style={slider_style}>{/* Single project go here. */}
                 <div className="lg:mx-16 xl:mx-36 -bottom-20 xl:-bottom-16 absolute bg-[#fff] shadow-md">
-                    <div className="py-4 px-12">
+                    <div className="p-4 md:px-12">
                         <h4 className="text-[#3c6e71] text-base md:text-xl font-bold">{title}</h4>
                         <p className='py-2 text-sm md:text-base'>{detail}</p>
                         <div className='flex justify-between'>
