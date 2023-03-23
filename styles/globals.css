@@ -18,7 +18,7 @@ body {
   padding: 0;
   margin: 0;
   /* background-color: #fefae0; */
-  background-color: #fff;
+  /* background-color: #fff; */
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   /* background-color: yellow; */
@@ -50,6 +50,7 @@ body {
 .container {
   padding-right: 2rem;
   padding-left: 2rem;
+  padding-inline: 2rem;
   margin: 0 auto;
   max-width: 90%;
 }
