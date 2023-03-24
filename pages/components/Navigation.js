@@ -34,15 +34,15 @@ export default function Navigation(){
 
         <main>
         {/* About Section */}
-            <section className="container pb-24 md:pb-36">
-                <h2 className="text-3xl md:text-5xl font-bold text-[#264653] mb-2 md:mb-8"><span className="text-6xl md:text-8xl text-[#6A040F]">.</span>About Me</h2>
+            <section className="container py-24 md:py-36">
+                <h2 className="text-3xl md:text-5xl font-bold text-[#264653] mb-6 md:mb-16"><span className="text-6xl md:text-8xl text-[#6A040F]">.</span>About Me</h2>
                 <div className="xl:flex justify-between">
                     <div className="xl:w-1/2">
-                        <h3 className="text-[#3c6e71] text-2xl md:text-3xl font-bold pb-2 md:pb-6">My Background</h3>
+                        {/* <h3 className="text-[#3c6e71] text-2xl md:text-3xl font-bold pb-2 md:pb-6">My Background</h3> */}
                         <p className="text-[#2b2d42] xl:pr-12 md:text-xl lg:pb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iure asperiores quisquam reprehenderit architecto iste laborum fugiat illum, vitae similique, et dignissimos vel! Atque alias, saepe libero modi omnis error?<br/><br/> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora mollitia doloribus natus possimus sed laborum assumenda commodi alias iste. Soluta, eum voluptas perspiciatis error id cupiditate hic impedit nobis nisi! <br/>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, vel.</p>
                     </div>
                     <div className="mt-8 xl:mt-0 xl:w-1/2">
-                        <h3 className="text-[#3c6e71] text-2xl md:text-3xl font-bold pb-2 md:pb-6">My Skills</h3>
+                        {/* <h3 className="text-[#3c6e71] text-2xl md:text-3xl font-bold pb-2 md:pb-6">My Skills</h3> */}
                         <ul className="grid grid-cols-2 md:grid-cols-3 gap-4">
                             <Skill skill={"React"} />
                             <Skill skill={"Python"} />
@@ -60,21 +60,11 @@ export default function Navigation(){
                     </div>
                 </div>
             </section>
-{/* 
-            <section className="container pb-24 md:pb-36">
-                <h2 className="text-3xl md:text-5xl font-bold text-[#264653] mb-2 md:mb-8"><span className="text-6xl md:text-8xl text-[#6A040F]">.</span>My Experience</h2>
-                <div className="flex flex-col justify-between">
-                    <h3 className="text-[#3c6e71] text-md lg:text-xl font-bold">Pelrio SRL</h3>
-                    <div className="lg:w-4/5 text-[#2b2d42] xl:pl-12 md:text-xl lg:pb-0">
-                        <h4 className="text-sm font-bold ">Software Developer</h4>
-                    </div>
-                </div>
-            </section> */}
 
             <Projects />
 
             <footer className="container">
-                <div className="text-center my-24">
+                <div className="text-center pt-60 pb-40 lg:pt-72 lg:pb-72">
                     <h2 className="font-bold text-[#264653] text-2xl md:text-4xl">Get in touch</h2>
                     <p className="my-4 md:my-8 lg:w-1/2 lg:mx-auto md:text-xl text-[#2b2d42]">Reach out to me about collaborations, opportunities, <br/>music, football, or anything I can help with. <br/>Enjoy your day!!</p>
                     <ul className="flex justify-center gap-8 md:gap-12">
@@ -85,7 +75,7 @@ export default function Navigation(){
                     </ul>
                 </div>
 
-                <div className="border-t border-[#6A040F] mt-8 md:mt-10 lg:flex text-center justify-between items-center pb-8 lg:pb-12  text-[#3c6e71]">
+                <div className="border-t border-[#6A040F] lg:flex text-center justify-between items-center pb-8 lg:pb-12  text-[#3c6e71]">
                         {/* <p>Made By: <span>Muwanguzi Joshua</span></p> */}
                         <p className="font-medium pt-2 md:pt-4 md:text-xl">&copy;{new Date().getFullYear()} <span className="text-[#6A040F] hover:font-medium cursor-pointer font-normal hover:transition-all">Muwanguzi Joshua</span></p>
                         <p className="font-medium pt-2 md:pt-4 lg:text-xl">Inspired By: <span className="text-[#6A040F] hover:font-medium cursor-pointer font-normal hover:transition-all">Brittany Chiang</span> & <span className="text-[#6A040F] hover:font-medium cursor-pointer font-normal hover:transition-all">Ram Maheshwari</span></p>
