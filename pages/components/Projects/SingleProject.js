@@ -16,23 +16,30 @@ export default function SingleProject({title, detail, github, live, image}) {
     return (
 
         <div className="md:flex gap-4 relative">
-            <div className="w-full md:w-10/12 h-96 relative" style={slider_style}>{/* Single project go here. */}
+            <div className="w-full md:w-10/122 h-96 relative" style={slider_style}>{/* Single project go here. */}
                 <div className="lg:mx-16 xl:mx-36 -bottom-20 xl:-bottom-16 absolute bg-[#fff] shadow-md">
                     <div className="p-4 md:px-12">
-                        <h4 className="text-[#3c6e71] text-base md:text-xl font-bold">{title}</h4>
+                        <h4 className="text-[#3c6e71] text-base md:text-xl font-bold">{title}
+                            <span className='px-4'>
+                                    {github && <FontAwesomeIcon icon={['fab', 'twitter']} style={{ fontSize: 18, color: "#6A040F" }}/>}
+                            </span>
+                            <span>
+                                {live &&<FontAwesomeIcon icon={['fab', 'github']} style={{ fontSize: 18, color: "#6A040F" }}/>}
+                            </span>
+                        </h4>
                         <p className='py-2 text-sm md:text-base'>{detail}</p>
-                        <div className='flex justify-between'>
+                        {/* <div className='flex justify-between'>
                             <div className='lg:hidden'></div>
                             <ul className="flex justify-between gap-8">
                                 {github && <li className="cursor-pointer"><FontAwesomeIcon icon={['fab', 'twitter']} style={{ fontSize: 20, color: "#6A040F" }}/></li>}
                                 {live && <li className="cursor-pointer"><FontAwesomeIcon icon={['fab', 'github']} style={{ fontSize: 20, color: "#6A040F" }}/></li>}
                             </ul>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
 
-            <div className=''>
+            <div className='hidden'>
                 <ul className='text-[#2b2d42] hidden md:flex flex-col gap-2 border-2 border-[#6A040F] py-2 px-4'>
                     <li>Javascript</li>
                     <li>Python</li>

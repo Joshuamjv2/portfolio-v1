@@ -27,7 +27,7 @@ const projects = [
 export default function Projects(){
     return(
         <section className="container">
-            <h2 className="text-3xl md:text-5xl font-bold text-[#264653] mb-6 md:mb-16"><span className="text-6xl md:text-8xl text-[#6A040F]">.</span>Projects</h2>
+            <h2 className="text-3xl md:text-5xl font-bold text-[#264653] mb-8"><span className="text-6xl md:text-8xl text-[#6A040F]"></span>Projects</h2>
             <div className="flex flex-col gap-40 md:gap-60 lg:gap-72"> {/* All projects go here. */}
                     {projects.map(project =>
                         <SingleProject

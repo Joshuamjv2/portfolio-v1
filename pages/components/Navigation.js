@@ -11,7 +11,7 @@ export default function Navigation(){
         {/* Navigation  */}
             <div className='flex items-center justify-between px-12 md:px-24 pt-4 md:pt-8'>
                 <Image src={logo} height={60} className="md:h-20 w-auto"/>
-                <ul className='md:flex text-[#3c6e71] gap-6 xl:gap-24 font-medium uppercase hidden md:visible items-center cursor-pointer'>
+                <ul className='md:flex text-[#3c6e71] gap-6 xl:gap-16 font-medium uppercase hidden md:visible items-center cursor-pointer'>
                     <li className="hover:text-[#6A040F] hover:transition-colors text-sm md:text-base">About</li>
                     <li className="hover:text-[#6A040F] hover:transition-colors text-sm md:text-base">Experience</li>
                     <li className="hover:text-[#6A040F] hover:transition-colors text-sm md:text-base">Projects</li>
@@ -25,8 +25,9 @@ export default function Navigation(){
                     <h5 className="mb-2 text-[#6A040F] md:text-xl xl:text-2xl">Hello there, my name is</h5>
                     <h1 className="uppercase font-bold text-[#264653] text-3xl md:text-5xl lg:text-6xl">Muwanguzi Joshua.</h1>
                     <h2 className="text-[#3c6e71] py-2 xl:py-4 text-2xl md:text-4xl xl:text-5xl font-bold">I build software for the web.</h2>
-                    <p className="text-[#2b2d42] xl:w-1/2 lg:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab natus enim itaque, harum iusto eum tempora voluptate aut quia consequuntur veritatis eos corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non labore nulla natus quas illum eligendi!</p>
-                    <button className="uppercase mt-4 xl:mt-8 text-[#6A040F] border-2 p-2 border-[#6A040F] font-bold hover:shadow-md hover:transition-all duration-300">Contact Me</button>
+                    <p className="text-[#2b2d42] xl:w-1/2 lg:text-base">I am a software engineer specialized in building for the web both on the backend and frontend, with more proficiency in the backend.
+                    I am currently working as a python backend developer at a Italian based start up called <span className="text-[#6a040f] font-bold"><a href="https://www.pelrio.com" target="_blank">Pelrio</a></span>, building tools that automate accounting processes for small businesses.</p>
+                    <button className="uppercase mt-4 xl:mt-8 text-[#6A040F] border-2 p-2 border-[#6A040F] font-bold hover:shadow-md hover:transition-all duration-300 text-base">Contact Me</button>
                 </div>
             </div>
         </div>
@@ -35,11 +36,17 @@ export default function Navigation(){
         <main>
         {/* About Section */}
             <section className="container py-24 md:py-36">
-                <h2 className="text-3xl md:text-5xl font-bold text-[#264653] mb-6 md:mb-16"><span className="text-6xl md:text-8xl text-[#6A040F]">.</span>About Me</h2>
+                <h2 className="text-3xl md:text-5xl font-bold text-[#264653] mb-8"><span className="text-6xl md:text-8xl text-[#6A040F]"></span>About Me</h2>
                 <div className="xl:flex justify-between">
                     <div className="xl:w-1/2">
                         {/* <h3 className="text-[#3c6e71] text-2xl md:text-3xl font-bold pb-2 md:pb-6">My Background</h3> */}
-                        <p className="text-[#2b2d42] xl:pr-12 md:text-xl lg:pb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iure asperiores quisquam reprehenderit architecto iste laborum fugiat illum, vitae similique, et dignissimos vel! Atque alias, saepe libero modi omnis error?<br/><br/> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora mollitia doloribus natus possimus sed laborum assumenda commodi alias iste. Soluta, eum voluptas perspiciatis error id cupiditate hic impedit nobis nisi! <br/>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, vel.</p>
+                        <p className="text-[#2b2d42] xl:pr-12 md:text-base lg:pb-0">
+                            Hi, my name is Muwanguzi Joshua, a software Engineer based in Uganda. Back in 2019, I discovered the possibility of building things with code.I am self taught and I love the process of getting a new skill and building something meaning full with it.
+                            <br />
+                            I am currently focussed on building scalable, efficient and accessible software at <span className="text-[#6a040f] font-bold"><a href="https://www.pelrio.com" target="_blank">Pelrio</a></span> while I also improve my frontend skills.
+                            <br /><br />
+                            Besides coding, I like, learning new things, listening to music, playing football and capturing people's; moments and emotions with a camera.
+                        </p>
                     </div>
                     <div className="mt-8 xl:mt-0 xl:w-1/2">
                         {/* <h3 className="text-[#3c6e71] text-2xl md:text-3xl font-bold pb-2 md:pb-6">My Skills</h3> */}
@@ -52,9 +59,9 @@ export default function Navigation(){
                             <Skill skill={"AWS AppSync"} />
                             <Skill skill={"Fast API"} />
                             <Skill skill={"Django"} />
-                            <Skill skill={"SQL"} />
+                            <Skill skill={"Postgresql"} />
                             <Skill skill={"MongoDB"} />
-                            <Skill skill={"Selenium"} />
+                            <Skill skill={"Next Js"} />
                             <Skill skill={"GitHub"} />
                         </ul>
                     </div>
@@ -64,21 +71,31 @@ export default function Navigation(){
             <Projects />
 
             <footer className="container">
-                <div className="text-center pt-60 pb-40 lg:pt-72 lg:pb-72">
+                <div className="text-center pt-40 pb-40">
                     <h2 className="font-bold text-[#264653] text-2xl md:text-4xl">Get in touch</h2>
-                    <p className="my-4 md:my-8 lg:w-1/2 lg:mx-auto md:text-xl text-[#2b2d42]">Reach out to me about collaborations, opportunities, <br/>music, football, or anything I can help with. <br/>Enjoy your day!!</p>
+                    <p className="my-4 md:my-8 lg:w-1/2 lg:mx-auto md:text-base text-[#2b2d42]">Please reach out to me about collaborations, opportunities, <br/>or just to say hello. I will be glad to hear from you. <br/>Enjoy your day!!</p>
                     <ul className="flex justify-center gap-8 md:gap-12">
-                        <li className="cursor-pointer"><FontAwesomeIcon icon={['fab', 'github']} style={{ fontSize: 30, color: "#6A040F" }}/></li>
-                        <li className="cursor-pointer"><FontAwesomeIcon icon={['fab', 'instagram']} style={{ fontSize: 30, color: "#6A040F" }} /></li>
-                        <li className="cursor-pointer"><FontAwesomeIcon icon={['fab', 'twitter']} style={{ fontSize: 30, color: "#6A040F" }} /></li>
-                        <li className="cursor-pointer"><FontAwesomeIcon icon={['fab', 'linkedin']} style={{ fontSize: 30, color: "#6A040F" }} /></li>
+                        <li className="cursor-pointer"><a href="https://github.com/Joshuamjv2" target="_blank">
+                            <FontAwesomeIcon icon={['fab', 'github']} style={{ fontSize: 30, color: "#6A040F" }} />
+                        </a></li>
+                        <li className="cursor-pointer"><a href="https://www.linkedin.com/in/joshua-muwanguzi-33364a164/" target="_blank">
+                            <FontAwesomeIcon icon={['fab', 'linkedin']} style={{ fontSize: 30, color: "#6A040F" }}/>
+                        </a></li>
+                        <li className="cursor-pointer"><a href="https://www.instagram.com/bryant.joshua/" target="_blank">
+                            <FontAwesomeIcon icon={['fab', 'instagram']} style={{ fontSize: 30, color: "#6A040F" }} />
+                        </a></li>
+                        <li className="cursor-pointer"><a href="https://twitter.com/Muwangu12386789" target="_blank">
+                            <FontAwesomeIcon icon={['fab', 'twitter']} style={{ fontSize: 30, color: "#6A040F" }} />
+                        </a></li>
                     </ul>
                 </div>
 
-                <div className="border-t border-[#6A040F] lg:flex text-center justify-between items-center pb-8 lg:pb-12  text-[#3c6e71]">
+                <div className="border-t border-[#6A040F]  text-[#3c6e71]">
                         {/* <p>Made By: <span>Muwanguzi Joshua</span></p> */}
-                        <p className="font-medium pt-2 md:pt-4 md:text-xl">&copy;{new Date().getFullYear()} <span className="text-[#6A040F] hover:font-medium cursor-pointer font-normal hover:transition-all">Muwanguzi Joshua</span></p>
-                        <p className="font-medium pt-2 md:pt-4 lg:text-xl">Inspired By: <span className="text-[#6A040F] hover:font-medium cursor-pointer font-normal hover:transition-all">Brittany Chiang</span> & <span className="text-[#6A040F] hover:font-medium cursor-pointer font-normal hover:transition-all">Ram Maheshwari</span></p>
+                        <div className="lg:flex text-center justify-between items-center md:px-8 py-6">
+                            <p className="font-medium md:text-base">&copy;{new Date().getFullYear()} <span className="text-[#6A040F] hover:font-medium cursor-pointer font-normal hover:transition-all">Muwanguzi Joshua</span></p>
+                            <p className="font-medium lg:text-base">Inspired By: <span className="text-[#6A040F] hover:font-medium cursor-pointer font-normal hover:transition-all">Brittany Chiang</span> & <span className="text-[#6A040F] hover:font-medium cursor-pointer font-normal hover:transition-all">Ram Maheshwari</span></p>
+                        </div>
                 </div>
             </footer>
         </main>
