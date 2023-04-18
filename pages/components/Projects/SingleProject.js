@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
 
-export default function SingleProject({title, detail, github, live, image}) {
+export default function SingleProject({title, detail, github, live, image, stack}) {
     const slider_style = {
         'backgroundImage':`linear-gradient(to bottom, rgba(0,0,0,0) 25%, rgba(0,0,0,1)), ${image}`,
         'backgroundSize': 'cover', 
@@ -28,6 +28,7 @@ export default function SingleProject({title, detail, github, live, image}) {
                             </span>
                         </h4>
                         <p className='py-2 text-sm md:text-base'>{detail}</p>
+                        <p className='text-[#3c6e71] font-semibold'>Stack: <span className='font-semibold text-[#000]'>{stack}</span></p>
                         {/* <div className='flex justify-between'>
                             <div className='lg:hidden'></div>
                             <ul className="flex justify-between gap-8">

@@ -1,26 +1,30 @@
 import Image from "next/image"
-import logo from "../../public/images/josh-logo-done2.png"
+import logo from "../../../public/images/josh-logo-done2.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Projects from "./Projects/Projects";
-import Skill from "./Skill";
+import Projects from "../Projects/Projects";
+import Skill from "../Skill";
+import Link from "next/link";
+import SingleNav from "./SingleNav";
 
 export default function Navigation(){
     return (
     <>
         <div className="h-screen">
         {/* Navigation  */}
-            <div className='flex items-center justify-between px-12 md:px-24 pt-4 md:pt-8'>
+            <div className='flex items-center justify-between px-12 md:px-24 pt-4'>
                 <Image src={logo} height={60} className="md:h-20 w-auto"/>
                 <ul className='md:flex text-[#3c6e71] gap-6 xl:gap-16 font-medium uppercase hidden md:visible items-center cursor-pointer'>
-                    <li className="hover:text-[#6A040F] hover:transition-colors text-sm md:text-base">About</li>
-                    <li className="hover:text-[#6A040F] hover:transition-colors text-sm md:text-base">Experience</li>
-                    <li className="hover:text-[#6A040F] hover:transition-colors text-sm md:text-base">Projects</li>
-                    <li className="hover:text-[#6A040F] hover:transition-colors text-sm md:text-base">Contact</li>
-                    <li className="border-2 p-2 border-[#6A040F] text-[#6A040F] font-bold hover:shadow-md hover:transition-all duration-300 text-sm md:text-base">Resume</li>
+                    <SingleNav title={"Home"} address={"/"} />
+                    <SingleNav title={"About"} address={"#about"} />
+                    <SingleNav title={"Projects"} address={"#projects"} />
+                    <SingleNav title={"Contact"} address={"#contact"} />
+                    <Link href={"https://www.cakeresume.com/s--h_cXTLhM08_mu45j0MERPA--/muwanguzi-joshua"} target="_blank">
+                        <li className="border-2 p-2 border-[#6A040F] text-[#6A040F] font-bold hover:shadow-md hover:transition-all duration-300 text-sm md:text-base">Resume</li>
+                    </Link>
                 </ul>
             </div>
         {/* Hero section */}
-           <div className="container hero flex items-center">
+        <div className="container hero flex items-center">
                 <div>
                     <h5 className="mb-2 text-[#6A040F] md:text-xl xl:text-2xl">Hello there, my name is</h5>
                     <h1 className="uppercase font-bold text-[#264653] text-3xl md:text-5xl lg:text-6xl">Muwanguzi Joshua.</h1>
@@ -35,7 +39,7 @@ export default function Navigation(){
 
         <main>
         {/* About Section */}
-            <section className="container py-24 md:py-36">
+            <section className="container py-24 md:py-36" id="about">
                 <h2 className="text-3xl md:text-5xl font-bold text-[#264653] mb-8"><span className="text-6xl md:text-8xl text-[#6A040F]"></span>About Me</h2>
                 <div className="xl:flex justify-between">
                     <div className="xl:w-1/2">
@@ -70,7 +74,7 @@ export default function Navigation(){
 
             <Projects />
 
-            <footer className="container">
+            <footer className="container" id="contact">
                 <div className="text-center pt-40 pb-40">
                     <h2 className="font-bold text-[#264653] text-2xl md:text-4xl">Get in touch</h2>
                     <p className="my-4 md:my-8 lg:w-1/2 lg:mx-auto md:text-base text-[#2b2d42]">Please reach out to me about collaborations, opportunities, <br/>or just to say hello. I will be glad to hear from you. <br/>Enjoy your day!!</p>
