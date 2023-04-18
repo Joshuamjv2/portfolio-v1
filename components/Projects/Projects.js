@@ -1,5 +1,4 @@
 import SingleProject from "./SingleProject";
-import cinema_image from "../../../public/images/cinema_popcorn.jpg"
 
 const projects = [
     {

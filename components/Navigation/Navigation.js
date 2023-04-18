@@ -1,5 +1,5 @@
 import Image from "next/image"
-import logo from "../../../public/images/josh-logo-done2.png"
+import logo from "../../public/images/josh-logo-done2.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Projects from "../Projects/Projects";
 import Skill from "../Skill";
