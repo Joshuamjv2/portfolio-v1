@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
+import Link from 'next/link';
 
 
 export default function SingleProject({title, detail, github, live, image, stack}) {
@@ -20,11 +21,11 @@ export default function SingleProject({title, detail, github, live, image, stack
                 <div className="lg:mx-16 xl:mx-36 -bottom-20 xl:-bottom-16 absolute bg-[#fff] shadow-md">
                     <div className="p-4 md:px-12">
                         <h4 className="text-[#3c6e71] text-base md:text-xl font-bold">{title}
-                            <span className='px-4'>
-                                    {github && <FontAwesomeIcon icon={['fab', 'twitter']} style={{ fontSize: 18, color: "#6A040F" }}/>}
+                            <span className='px-6'>
+                                    {github && <Link href={live}><FontAwesomeIcon icon={['fa', 'external-link']} style={{ fontSize: 18, color: "#6A040F" }}/></Link>}
                             </span>
                             <span>
-                                {live &&<FontAwesomeIcon icon={['fab', 'github']} style={{ fontSize: 18, color: "#6A040F" }}/>}
+                                {live &&<Link href={github}><FontAwesomeIcon icon={['fab', 'github']} style={{ fontSize: 18, color: "#6A040F" }}/></Link>}
                             </span>
                         </h4>
                         <p className='py-2 text-sm md:text-base'>{detail}</p>

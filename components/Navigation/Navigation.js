@@ -9,10 +9,10 @@ import SingleNav from "./SingleNav";
 export default function Navigation(){
     return (
     <>
-        <div className="h-screen">
-        {/* Navigation  */}
-            <div className='flex items-center justify-between px-12 md:px-24 pt-4'>
-                <Image src={logo} height={60} className="md:h-20 w-auto"/>
+        <div className="">
+            {/* Navigation  */}
+            <div className='flex items-center justify-between px-12 md:px-24 py-4 bg-white fixed w-full z-10'>
+                <Image src={logo} height={70} className="md:h-16 w-auto"/>
                 <ul className='md:flex text-[#3c6e71] gap-6 xl:gap-16 font-medium uppercase hidden md:visible items-center cursor-pointer'>
                     <SingleNav title={"Home"} address={"/"} />
                     <SingleNav title={"About"} address={"#about"} />
@@ -23,18 +23,21 @@ export default function Navigation(){
                     </Link>
                 </ul>
             </div>
-        {/* Hero section */}
-        <div className="container hero flex items-center">
-                <div>
-                    <h5 className="mb-2 text-[#6A040F] md:text-xl xl:text-2xl">Hello there, my name is</h5>
-                    <h1 className="uppercase font-bold text-[#264653] text-3xl md:text-5xl lg:text-6xl">Muwanguzi Joshua.</h1>
-                    <h2 className="text-[#3c6e71] py-2 xl:py-4 text-2xl md:text-4xl xl:text-5xl font-bold">I build software for the web.</h2>
-                    <p className="text-[#2b2d42] xl:w-1/2 lg:text-base">I am a software engineer specialized in building for the web both on the backend and frontend, with more proficiency in the backend.
-                    I am currently working as a python backend developer at a Italian based start up called <span className="text-[#6a040f] font-bold"><a href="https://www.pelrio.com" target="_blank">Pelrio</a></span>, building tools that automate accounting processes for small businesses.</p>
-                    <button className="uppercase mt-4 xl:mt-8 text-[#6A040F] border-2 p-2 border-[#6A040F] font-bold hover:shadow-md hover:transition-all duration-300 text-base">Contact Me</button>
+            {/* Hero section */}
+            <div className="h-screen">
+                <div className="container flex items-center h-full">
+                    <div>
+                        <h5 className="mb-2 text-[#6A040F] md:text-xl xl:text-2xl">Hello there, my name is</h5>
+                        <h1 className="uppercase font-bold text-[#264653] text-3xl md:text-5xl lg:text-6xl">Muwanguzi Joshua.</h1>
+                        <h2 className="text-[#3c6e71] py-2 xl:py-4 text-2xl md:text-4xl xl:text-5xl font-bold">I build software for the web.</h2>
+                        <p className="text-[#2b2d42] xl:w-1/2 lg:text-base">I am a software engineer specialized in building for the web both on the backend and frontend, with more proficiency in the backend.
+                        I am currently working as a python backend developer at a Italian based start up called <span className="text-[#6a040f] font-bold"><a href="https://www.pelrio.com" target="_blank">Pelrio</a></span>, building tools that automate accounting processes for small businesses.</p>
+                        <button className="uppercase mt-4 xl:mt-8 text-[#6A040F] border-2 p-2 border-[#6A040F] font-bold hover:shadow-md hover:transition-all duration-300 text-base">Contact Me</button>
+                    </div>
                 </div>
             </div>
         </div>
+    
 
 
         <main>

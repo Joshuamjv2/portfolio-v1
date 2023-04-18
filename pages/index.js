@@ -8,11 +8,11 @@ const inter = Inter({ subsets: ['latin'] })
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import {fas} from '@fortawesome/free-solid-svg-icons'
+import {faExternalLink, fas} from '@fortawesome/free-solid-svg-icons'
 import { faTwitter, faGithub, faInstagram, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
-library.add(fab, fas, faTwitter, faGithub, faLinkedin, faInstagram, faEnvelope)
+library.add(fab, fas, faTwitter, faGithub, faLinkedin, faInstagram, faEnvelope, faExternalLink)
 
 export default function Home() {
   return (

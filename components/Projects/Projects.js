@@ -4,8 +4,8 @@ const projects = [
     {
         title: "Cinema Train",
         detail: "I live in Uganda and I realized all cinemas/movie theaters don't sell tickets online. I, therefore, built a website where users can buy tickets, rate their favorite movies, and recommend them as well.",
-        github: "Github",
-        live: "Live",
+        live: "https://cinema-train.vercel.app",
+        github: "https://github.com/Joshuamjv2/cinema_train",
         image: "url('/images/cinema_popcorn.jpg')",
         stack: "NextJs, FastAPI, MongoDB"
     },
