@@ -48,11 +48,11 @@ export default function Navigation(){
                     <div className="xl:w-1/2">
                         {/* <h3 className="text-[#3c6e71] text-2xl md:text-3xl font-bold pb-2 md:pb-6">My Background</h3> */}
                         <p className="text-[#2b2d42] xl:pr-12 md:text-base lg:pb-0">
-                            Hi, my name is Muwanguzi Joshua, a software Engineer based in Uganda. Back in 2019, I discovered the possibility of building things with code.I am self taught and I love the process of getting a new skill and building something meaning full with it.
+                            Hi, my name is Muwanguzi Joshua, a software Engineer based in Uganda. Back in 2019, I discovered the possibility of building things with code. I am self taught and I love the process of getting a new skill and building something meaning full with it.
                             <br />
                             I am currently focussed on building scalable, efficient and accessible software at <span className="text-[#6a040f] font-bold"><a href="https://www.pelrio.com" target="_blank">Pelrio</a></span> while I also improve my frontend skills.
                             <br /><br />
-                            Besides coding, I like, learning new things, listening to music, playing football and capturing people's; moments and emotions with a camera.
+                            Besides coding, I like, learning new things, listening to music, playing football and capturing people's; moments and emotions through photography.
                         </p>
                     </div>
                     <div className="mt-8 xl:mt-0 xl:w-1/2">
