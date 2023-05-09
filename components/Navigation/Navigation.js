@@ -13,7 +13,7 @@ export default function Navigation(){
         <div className="">
             {/* Navigation  */}
             <div className='flex items-center justify-between px-12 md:px-24 py-4 bg-white fixed w-full z-10'>
-                <Image src={logo} height={70} className="md:h-16 w-auto"/>
+                <Image src={logo} height={70} className="h-12 md:h-16 w-auto"/>
                 <ul className='md:flex text-[#3c6e71] gap-6 xl:gap-16 font-medium uppercase hidden md:visible items-center cursor-pointer'>
                     <SingleNav title={"Home"} address={"/"} />
                     <SingleNav title={"About"} address={"#about"} />
@@ -33,7 +33,7 @@ export default function Navigation(){
                         <h2 className="text-[#3c6e71] py-2 xl:py-4 text-2xl md:text-4xl xl:text-5xl font-bold">I build software for the web.</h2>
                         <p className="text-[#2b2d42] xl:w-1/2 lg:text-base">I am a software engineer specialized in building for the web both on the backend and frontend, with more proficiency in the backend.
                         I am currently working as a python backend developer at a Italian based start up called <span className="text-[#6a040f] font-bold"><a href="https://www.pelrio.com" target="_blank">Pelrio</a></span>, building tools that automate accounting processes for small businesses.</p>
-                        <button className="uppercase mt-4 xl:mt-8 text-[#6A040F] border-2 p-2 border-[#6A040F] font-bold hover:shadow-md hover:transition-all duration-300 text-base">Contact Me</button>
+                        <Link href={"#contact"}><button className="uppercase mt-4 xl:mt-8 text-[#6A040F] border-2 p-2 border-[#6A040F] font-bold hover:shadow-md hover:transition-all duration-300 text-base">Contact Me</button></Link>
                     </div>
                 </div>
             </div>
@@ -49,9 +49,9 @@ export default function Navigation(){
                     <div className="xl:w-1/2">
                         {/* <h3 className="text-[#3c6e71] text-2xl md:text-3xl font-bold pb-2 md:pb-6">My Background</h3> */}
                         <p className="text-[#2b2d42] xl:pr-12 md:text-base lg:pb-0">
-                            Hi, my name is Muwanguzi Joshua, a software Engineer based in Uganda. Back in 2019, I discovered the possibility of building things with code. I am self taught and I love the process of getting a new skill and building something meaning full with it.
+                            Hi, my name is Muwanguzi Joshua, a software Engineer based in Uganda. Back in 2019, I discovered the possibility of building things with code. I am self taught and I love the process of learning a new skill and building something meaning full with it.
                             <br />
-                            I am currently focussed on building scalable, efficient and accessible software at <span className="text-[#6a040f] font-bold"><a href="https://www.pelrio.com" target="_blank">Pelrio</a></span> while I also improve my frontend skills.
+                            I am currently focussed on building scalable, efficient and accessible software at <span className="text-[#6a040f] font-bold"><a href="https://www.pelrio.com" target="_blank">Pelrio</a></span>, but I am open to new opportunities.
                             <br /><br />
                             Besides coding, I like, learning new things, listening to music, playing football and capturing people's; moments and emotions through photography.
                         </p>
