@@ -30,13 +30,6 @@ export default function SingleProject({title, detail, github, live, image, stack
                         </h4>
                         <p className='py-2 text-sm md:text-base'>{detail}</p>
                         <p className='text-[#3c6e71] font-semibold'>Stack: <span className='font-semibold text-[#000]'>{stack}</span></p>
-                        {/* <div className='flex justify-between'>
-                            <div className='lg:hidden'></div>
-                            <ul className="flex justify-between gap-8">
-                                {github && <li className="cursor-pointer"><FontAwesomeIcon icon={['fab', 'twitter']} style={{ fontSize: 20, color: "#6A040F" }}/></li>}
-                                {live && <li className="cursor-pointer"><FontAwesomeIcon icon={['fab', 'github']} style={{ fontSize: 20, color: "#6A040F" }}/></li>}
-                            </ul>
-                        </div> */}
                     </div>
                 </div>
             </div>

@@ -4,7 +4,8 @@ import Navigation from '../components/Navigation/Navigation'
 
 const inter = Inter({ subsets: ['latin'] })
 
-import { library } from '@fortawesome/fontawesome-svg-core'
+
+const {library} = require('@fortawesome/fontawesome-svg-core')
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import {faExternalLink, fas} from '@fortawesome/free-solid-svg-icons'
 import { faTwitter, faGithub, faInstagram, faLinkedin} from '@fortawesome/free-brands-svg-icons'
