@@ -6,15 +6,19 @@ import Projects2 from "../Projects/Projects2";
 import Skill from "../Skill";
 import Link from "next/link";
 import SingleNav from "./SingleNav";
+import { useState } from "react";
 
 export default function Navigation(){
+    const [burgerOpen, setBurgerOpen] = useState(false)
+
+    const handleOnClickBurger = () => setBurgerOpen(!burgerOpen)
     return (
     <>
         <div className="">
             {/* Navigation  */}
             <div className='flex items-center justify-between px-12 md:px-24 py-4 bg-white fixed w-full z-10'>
                 <Image src={logo} height={70} className="h-12 md:h-16 w-auto"/>
-                <ul className='md:flex text-[#3c6e71] gap-6 xl:gap-16 font-medium uppercase hidden md:visible items-center cursor-pointer'>
+                <ul className='hidden md:flex text-[#3c6e71] gap-6 xl:gap-16 font-medium uppercase items-center cursor-pointer'>
                     <SingleNav title={"Home"} address={"/"} />
                     <SingleNav title={"About"} address={"#about"} />
                     <SingleNav title={"Projects"} address={"#projects"} />
@@ -23,6 +27,14 @@ export default function Navigation(){
                         <li className="border-2 p-2 border-[#6A040F] text-[#6A040F] font-bold hover:shadow-md hover:transition-all duration-300 text-sm md:text-base">Resume</li>
                     </Link>
                 </ul>
+                <div onClick={handleOnClickBurger} className="hamburger relative cursor-pointer block md:hidden">
+                {/* check global.css for more styles on this */}
+                    <span className="bar" style={burgerOpen ? {transform: [
+                                { rotate: '-90deg' }
+                            ] }: {}}></span>
+                    <span className="bar"></span>
+                    <span className="bar"></span>
+                </div>
             </div>
             {/* Hero section */}
             <div className="h-screen">
@@ -38,7 +50,6 @@ export default function Navigation(){
                 </div>
             </div>
         </div>
-    
 
 
         <main>
