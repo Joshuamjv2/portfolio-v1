@@ -12,12 +12,30 @@ export default function Navigation(){
     const [burgerOpen, setBurgerOpen] = useState(false)
 
     const handleOnClickBurger = () => setBurgerOpen(!burgerOpen)
+
+    const handleClickLink = () => burgerOpen == true && setBurgerOpen(!burgerOpen)
+
+    console.log(burgerOpen)
     return (
     <>
         <div className="">
             {/* Navigation  */}
             <div className='flex items-center justify-between px-12 md:px-24 py-4 bg-white fixed w-full z-10'>
-                <Image src={logo} height={70} className="h-12 md:h-16 w-auto"/>
+                <Image src={logo} height={70} className="h-12 md:h-16 w-auto z-10"/>
+                {/* mobile */}
+                {burgerOpen && !burgerOpen == 0 && <div className="w-screen md:hidden">
+                    <ul className="flex flex-col gap-5 text-center pt-24 pb-24 border-b border-[#e6e3e3] shadow-sm left-0 absolute w-full bg-white">
+                        <SingleNav title={"Home"} address={"/"} handleClick={handleClickLink} />
+                        <SingleNav title={"About"} address={"#about"} handleClick={handleClickLink} />
+                        <SingleNav title={"Projects"} address={"#projects"} handleClick={handleClickLink} />
+                        <SingleNav title={"Contact"} address={"#contact"} handleClick={handleClickLink} />
+                        <Link onClick={handleClickLink} href={"https://www.cakeresume.com/s--h_cXTLhM08_mu45j0MERPA--/muwanguzi-joshua"} target="_blank">
+                            <li className="border-2 p-2 border-[#6A040F] text-[#6A040F] font-bold hover:shadow-md hover:transition-all duration-300 text-sm md:text-base mx-24">Resume</li>
+                        </Link>
+                    </ul>
+                </div>}
+                {/* end mobile */}
+                {/* large screens */}
                 <ul className='hidden md:flex text-[#3c6e71] gap-6 xl:gap-16 font-medium uppercase items-center cursor-pointer'>
                     <SingleNav title={"Home"} address={"/"} />
                     <SingleNav title={"About"} address={"#about"} />
@@ -29,11 +47,18 @@ export default function Navigation(){
                 </ul>
                 <div onClick={handleOnClickBurger} className="hamburger relative cursor-pointer block md:hidden">
                 {/* check global.css for more styles on this */}
-                    <span className="bar" style={burgerOpen ? {transform: [
-                                { rotate: '-90deg' }
-                            ] }: {}}></span>
-                    <span className="bar"></span>
-                    <span className="bar"></span>
+                    <span className="bar" style={{
+                        transform: burgerOpen ? 'rotate(45deg) translate(12px': ""
+                    }}></span>
+                    <span className="bar" style={{
+                        opacity: burgerOpen ? 0: "",
+                        transition: "opacity 20ms 200ms ease-in-out"
+
+                    }}></span>
+                    <span className="bar" style={{
+                        transform: burgerOpen ? 'rotate(-45deg) translate(12px)': "",
+                        // transform: burgerOpen ? 'translateY(6px)': ""
+                    }}></span>
                 </div>
             </div>
             {/* Hero section */}
