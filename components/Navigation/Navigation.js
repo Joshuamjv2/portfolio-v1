@@ -52,7 +52,7 @@ export default function Navigation(){
                     }}></span>
                     <span className="bar" style={{
                         opacity: burgerOpen ? 0: "",
-                        transition: "opacity 20ms 200ms ease-in-out"
+                        transition: "opacity 40ms"
 
                     }}></span>
                     <span className="bar" style={{
