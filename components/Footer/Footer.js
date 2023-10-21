@@ -5,7 +5,7 @@ export default function Footer(){
     <footer className="container" id="contact">
                 <div className="text-center pt-32 pb-32 lg:pt-40 lg:pb-40">
                     <h2 className="font-bold text-[#264653] text-2xl md:text-4xl">Get in touch</h2>
-                    <p className="my-4 md:my-8 lg:w-1/2 lg:mx-auto md:text-base text-[#2b2d42]">Please reach out to me about collaborations, opportunities, <br/>or just to say hello. I will be glad to hear from you. <br/>Enjoy your day!!</p>
+                    <p className="my-4 md:my-8 lg:w-1/2 lg:mx-auto md:text-base text-[#2b2d42]">Please reach out to me about collaborations, opportunities, <br/>or just to say hello. I will be glad to hear from you.</p>
                     <ul className="flex justify-center gap-8 md:gap-12">
                         <li className="cursor-pointer"><a href="https://github.com/Joshuamjv2" target="_blank">
                             <FontAwesomeIcon icon={['fab', 'github']} style={{ fontSize: 30, color: "#6A040F" }} />

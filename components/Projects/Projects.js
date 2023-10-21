@@ -3,11 +3,19 @@ import SingleProject from "./SingleProject";
 const projects = [
     {
         title: "Cinema Train",
-        detail: "I live in Uganda and I realized all cinemas/movie theaters don't sell tickets online. I, therefore, built a website where users can buy tickets, rate their favorite movies, and recommend them as well.",
+        detail: "Designed and developed a comprehensive movie database application from the ground up, showcasing a strong command of both frontend and backend technologies. The project aimed to fetch and display movies from TMDB, serving as a valuable exercise to refine my frontend and design skills.",
         live: "https://cinema-train.vercel.app",
         github: "https://github.com/Joshuamjv2/cinema_train",
         image: "url('/images/cinema_popcorn.jpg')",
         stack: "NextJs, FastAPI, MongoDB"
+    },
+    {
+        title: "AI Chatbot",
+        detail: "Led the end-to-end development of the backend for AiChatbot, an AI-powered conversational application, marking my first foray into Language Model Models (LLMs). This pioneering project was designed to facilitate seamless information exchange between businesses and customers. ",
+        live: "https://aichatbot.so",
+        github: "https://github.com/Joshuamjv2/cinema_train",
+        image: "url('/images/aichatbot.jpg')",
+        stack: "FastAPI, MongoDB, AWS Lambda, Langchain, Openai, Pinecone"
     },
     // {
     //     title: "BookSalon",
