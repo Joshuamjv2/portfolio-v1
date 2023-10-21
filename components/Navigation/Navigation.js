@@ -89,7 +89,7 @@ export default function Navigation(){
                             <br />
                             I am currently focussed on building scalable, efficient and accessible software at <span className="text-[#6a040f] font-bold"><a href="https://www.pelrio.com" target="_blank">Pelrio</a></span>, but I am open to new opportunities.
                             <br /><br />
-                            Besides coding, I like, learning new things, listening to music, playing football and capturing people's; moments and emotions through photography.
+                            Besides coding, I like; reading books, listening to music, playing football and photography.
                         </p>
                     </div>
                     <div className="mt-8 xl:mt-0 xl:w-1/2">
