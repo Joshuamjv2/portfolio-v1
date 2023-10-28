@@ -29,7 +29,7 @@ export default function Navigation(){
                         <SingleNav title={"About"} address={"#about"} handleClick={handleClickLink} />
                         <SingleNav title={"Projects"} address={"#projects"} handleClick={handleClickLink} />
                         <SingleNav title={"Contact"} address={"#contact"} handleClick={handleClickLink} />
-                        <Link onClick={handleClickLink} href={"https://drive.google.com/file/d/1H2CJxmOciNCVt81sXergpxvQKLJc8Gye/view?usp=sharing"} target="_blank">
+                            <Link onClick={handleClickLink} href={"https://drive.google.com/file/d/1ZoV9QR0IXYIfyyB53SdUThhd51T05ryZ/view?usp=sharing"} target="_blank">
                             <li className="border-2 p-2 border-[#6A040F] text-[#6A040F] font-bold hover:shadow-md hover:transition-all duration-300 text-sm md:text-base mx-24">Resume</li>
                         </Link>
                     </ul>
@@ -41,7 +41,7 @@ export default function Navigation(){
                     <SingleNav title={"About"} address={"#about"} />
                     <SingleNav title={"Projects"} address={"#projects"} />
                     <SingleNav title={"Contact"} address={"#contact"} />
-                    <Link href={"https://drive.google.com/file/d/1H2CJxmOciNCVt81sXergpxvQKLJc8Gye/view?usp=sharing"} target="_blank">
+                    <Link href={"https://drive.google.com/file/d/1ZoV9QR0IXYIfyyB53SdUThhd51T05ryZ/view?usp=sharing"} target="_blank">
                         <li className="border-2 p-2 border-[#6A040F] text-[#6A040F] font-bold hover:shadow-md hover:transition-all duration-300 text-sm md:text-base">Resume</li>
                     </Link>
                 </ul>
