@@ -29,7 +29,7 @@ export default function Navigation(){
                         <SingleNav title={"About"} address={"#about"} handleClick={handleClickLink} />
                         <SingleNav title={"Projects"} address={"#projects"} handleClick={handleClickLink} />
                         <SingleNav title={"Contact"} address={"#contact"} handleClick={handleClickLink} />
-                        <Link onClick={handleClickLink} href={"https://www.cakeresume.com/s--h_cXTLhM08_mu45j0MERPA--/muwanguzi-joshua"} target="_blank">
+                        <Link onClick={handleClickLink} href={"https://drive.google.com/file/d/1H2CJxmOciNCVt81sXergpxvQKLJc8Gye/view?usp=sharing"} target="_blank">
                             <li className="border-2 p-2 border-[#6A040F] text-[#6A040F] font-bold hover:shadow-md hover:transition-all duration-300 text-sm md:text-base mx-24">Resume</li>
                         </Link>
                     </ul>
@@ -67,9 +67,8 @@ export default function Navigation(){
                     <div>
                         <h5 className="mb-2 text-[#6A040F] md:text-xl xl:text-2xl">Hello there, my name is</h5>
                         <h1 className="uppercase font-bold text-[#264653] text-3xl md:text-5xl lg:text-6xl">Muwanguzi Joshua</h1>
-                        <h2 className="text-[#3c6e71] py-2 xl:py-4 text-2xl md:text-4xl xl:text-5xl font-bold">I build mobile and web apps.</h2>
-                        <p className="text-[#2b2d42] xl:w-1/2 lg:text-base">I am a software engineer specialized in building for the web both on the backend and frontend, with more proficiency in the backend.
-                        I am currently working as a python backend developer at an Italian based start up called <span className="text-[#6a040f] font-bold"><a href="https://www.pelrio.com" target="_blank">Pelrio</a></span>, building tools that automate accounting processes for small businesses.</p>
+                        <h2 className="text-[#3c6e71] py-2 xl:py-4 text-2xl md:text-4xl xl:text-5xl font-bold">I build web applications.</h2>
+                        <p className="text-[#2b2d42] xl:w-1/2 lg:text-base">I am a versatile software engineer proficient in both frontend and backend web development, with a strong focus on backend technologies. Currently, I serve as a Python backend developer at <span className="text-[#6a040f] font-bold"><a href="https://www.pelrio.com" target="_blank">Pelrio</a></span>, an innovative Italian startup. In this capacity, I am actively involved in the creation of tools that streamline accounting processes for small businesses.</p>
                         <Link href={"#contact"}><button className="uppercase mt-4 xl:mt-8 text-[#6A040F] border-2 p-2 border-[#6A040F] font-bold hover:shadow-md hover:transition-all duration-300 text-base">Contact Me</button></Link>
                     </div>
                 </div>
