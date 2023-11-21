@@ -23,7 +23,7 @@ const projects = [
     {
         title: "Payroll application",
         detail: "Built payroll application for Ink Gallery Tattoo Studio in New Jersey, managing backend and frontend operations. This comprehensive tool simplifies artist payments and delivers immediate earnings insights, serving as an indispensable time-saving asset for the owner. Its able to handle multiple shops and soon will be rolled out to other shops.",
-        live: "https://tatoo-gallery-payroll.vercel.app",
+        live: "https://tattoo-gallery-payroll.vercel.app",
         // github: "https://github.com/Joshuamjv2/cinema_train",
         image: tattoo,
         stack: "FastAPI, MongoDB, Next Js, AWS Lambda"
