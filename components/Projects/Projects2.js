@@ -1,6 +1,7 @@
 import Project from "./SingleProject2";
 import popcorn from "../../public/images/cinema_popcorn.jpg"
 import aichatbot from "../../public/images/aichatbot.jpg"
+import tattoo from "../../public/images/tattoo_shop.jpg"
 
 const projects = [
      {
@@ -18,6 +19,14 @@ const projects = [
         // github: "https://github.com/Joshuamjv2/cinema_train",
         image: aichatbot,
         stack: "FastAPI, MongoDB, AWS Lambda, Langchain, Openai, Pinecone"
+    },
+    {
+        title: "Payroll application",
+        detail: "Built payroll application for Ink Gallery Tattoo Studio in New Jersey, managing backend and frontend operations. This comprehensive tool simplifies artist payments and delivers immediate earnings insights, serving as an indispensable time-saving asset for the owner. Its able to handle multiple shops and soon will be rolled out to other shops.",
+        live: "https://tatoo-gallery-payroll.vercel.app",
+        // github: "https://github.com/Joshuamjv2/cinema_train",
+        image: tattoo,
+        stack: "FastAPI, MongoDB, Next Js, AWS Lambda"
     },
 ]
 
