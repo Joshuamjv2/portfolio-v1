@@ -66,8 +66,8 @@ export default function Navigation(){
                 <div className="container flex items-center h-full">
                     <div>
                         <h5 className="mb-2 text-[#6A040F] md:text-xl xl:text-2xl">Hello, my name is</h5>
-                        <h1 className="uppercase font-bold text-[#264653] text-3xl md:text-5xl lg:text-6xl">Muwanguzi Joshua</h1>
-                        <h2 className="text-[#3c6e71] py-2 text-2xl md:text-4xl xl:text-5xl font-bold">I solve problems with <br></br> <span className="text-[#264653]">Software.</span></h2>
+                        <h1 className="uppercase font-bold text-[#264653] text-3xl md:text-5xl">Muwanguzi Joshua</h1>
+                        <h2 className="text-[#3c6e71] py-2 text-2xl md:text-4xl xl:text-4xl font-bold mb-4 lg:mb-8">I solve problems with <br></br> <span className="text-[#264653]">Software.</span></h2>
                         {/* <p className="text-[#2b2d42] xl:w-1/2 lg:text-base">I am a versatile software engineer proficient in both frontend and backend web development, with a strong focus on backend technologies. Currently, I serve as a Python backend developer at <span className="text-[#6a040f] font-bold"><a href="https://www.pelrio.com" target="_blank">Pelrio</a></span>, an innovative Italian startup. In this capacity, I am actively involved in the creation of tools that streamline accounting processes for small businesses.</p> */}
                         <Link href={"#contact"}><button className="uppercase mt-4 text-[#6A040F] border-2 p-2 border-[#6A040F] font-bold hover:shadow-md hover:transition-all duration-300 text-base">Contact Me</button></Link>
                     </div>
