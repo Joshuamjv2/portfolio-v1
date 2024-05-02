@@ -67,9 +67,9 @@ export default function Navigation(){
                     <div>
                         <h5 className="mb-2 text-[#6A040F] md:text-xl xl:text-2xl">Hello, my name is</h5>
                         <h1 className="uppercase font-bold text-[#264653] text-3xl md:text-5xl lg:text-6xl">Muwanguzi Joshua</h1>
-                        <h2 className="text-[#3c6e71] py-2 xl:py-4 text-2xl md:text-4xl xl:text-5xl font-bold">I build web applications.</h2>
-                        <p className="text-[#2b2d42] xl:w-1/2 lg:text-base">I am a versatile software engineer proficient in both frontend and backend web development, with a strong focus on backend technologies. Currently, I serve as a Python backend developer at <span className="text-[#6a040f] font-bold"><a href="https://www.pelrio.com" target="_blank">Pelrio</a></span>, an innovative Italian startup. In this capacity, I am actively involved in the creation of tools that streamline accounting processes for small businesses.</p>
-                        <Link href={"#contact"}><button className="uppercase mt-4 xl:mt-8 text-[#6A040F] border-2 p-2 border-[#6A040F] font-bold hover:shadow-md hover:transition-all duration-300 text-base">Contact Me</button></Link>
+                        <h2 className="text-[#3c6e71] py-2 text-2xl md:text-4xl xl:text-5xl font-bold">I solve problems with <br></br> <span className="text-[#264653]">Software.</span></h2>
+                        {/* <p className="text-[#2b2d42] xl:w-1/2 lg:text-base">I am a versatile software engineer proficient in both frontend and backend web development, with a strong focus on backend technologies. Currently, I serve as a Python backend developer at <span className="text-[#6a040f] font-bold"><a href="https://www.pelrio.com" target="_blank">Pelrio</a></span>, an innovative Italian startup. In this capacity, I am actively involved in the creation of tools that streamline accounting processes for small businesses.</p> */}
+                        <Link href={"#contact"}><button className="uppercase mt-4 text-[#6A040F] border-2 p-2 border-[#6A040F] font-bold hover:shadow-md hover:transition-all duration-300 text-base">Contact Me</button></Link>
                     </div>
                 </div>
             </div>
@@ -84,11 +84,11 @@ export default function Navigation(){
                     <div className="xl:w-1/2">
                         {/* <h3 className="text-[#3c6e71] text-2xl md:text-3xl font-bold pb-2 md:pb-6">My Background</h3> */}
                         <p className="text-[#2b2d42] xl:pr-12 md:text-base lg:pb-0">
-                            Hi, my name is Muwanguzi Joshua, a software Engineer based in Uganda. Back in 2019, I discovered the possibility of building things with code. I am self taught and I love the process of learning a new skill and building something meaning full with it.
+                            With more than 3 years in backend and frontend development, I build solutions with an aim to solve problems and ease operations for businesses, institutions and individuals. The process of building software involves strong collaboration, creativity, learning and self motivation, and this is what always draws me to build things this way.
                             <br />
-                            I am currently focussed on building scalable, efficient and accessible software at <span className="text-[#6a040f] font-bold"><a href="https://www.pelrio.com" target="_blank">Pelrio</a></span>, but I am open to new opportunities.
-                            <br /><br />
-                            Besides coding, I like; reading books, listening to music, playing football and photography.
+                            I am currently focussed on building multiple SaaS solutions for businesses at  <span className="text-[#6a040f] font-bold"><a href="https://www.pelrio.com" target="_blank">Pelrio SRL.</a></span>
+                            <br />
+                            When I am not writing code, I am either reading a book or out taking some pictures while listening to some beautiful music.
                         </p>
                     </div>
                     <div className="mt-8 xl:mt-0 xl:w-1/2">
