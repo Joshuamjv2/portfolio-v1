@@ -8,7 +8,7 @@ const projects = [
     {
         title: "Payriz",
         detail: "Payriz is an invoicing and payment application meant to ease payments for businesses. With a team of 3, I was the backend developer for this hackathon project which was ranked 5th. The payment processing in this application was built on top of the paystack API.",
-        live: "https://tattoo-gallery-payroll.vercel.app",
+        live: "https://payriz.vercel.app",
         // github: "https://github.com/Joshuamjv2/cinema_train",
         image: payriz,
         stack: "FastAPI, MongoDB, AWS Lambda"
