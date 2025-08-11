@@ -41,7 +41,7 @@ export default function Navigation(){
                     <SingleNav title={"About"} address={"#about"} />
                     <SingleNav title={"Projects"} address={"#projects"} />
                     <SingleNav title={"Contact"} address={"#contact"} />
-                    <Link href={"https://drive.google.com/file/d/1z9T1iUP3Nusx3pnHt2F3e8mFc5SQpKI2/view?usp=sharing"} target="_blank">
+                    <Link href={"https://drive.google.com/file/d/1Zi0CbCUMyppSUbFox2job9wwkYEOmp8V/view?usp=sharing"} target="_blank">
                         <li className="border-2 p-2 border-[#6A040F] text-[#6A040F] font-bold hover:shadow-md hover:transition-all duration-300 text-sm md:text-base">Resume</li>
                     </Link>
                 </ul>
