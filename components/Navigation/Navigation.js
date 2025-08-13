@@ -22,11 +22,13 @@ export default function Navigation(){
         <div className="">
             {/* Navigation  */}
             <div className='flex items-center justify-between px-4 sm:px-8 py-4 bg-white shadow-sm fixed w-full z-10'>
-                <Image src={logo} height={70} className="h-8 sm:h-12 w-auto z-10"/>
+                <a href="" className="z-10">
+                    <Image src={logo} height={70} className="h-8 sm:h-12 w-auto"/>
+                </a>
                 {/* mobile */}
                 {burgerOpen && !burgerOpen == 0 && <div className="w-screen md:hidden">
-                    <ul className="flex flex-col items-center gap-5 text-center pt-24 pb-24 border-b border-[#e6e3e3] shadow-sm left-0 absolute w-full bg-white h-screen">
-                        <SingleNav title={"Home"} address={"/"} handleClick={handleClickLink} />
+                    <ul className="flex flex-col items-center gap-5 text-center py-24 border-b border-[#e6e3e3] shadow-sm bg-white left-0 absolute w-full h-screen">
+                        {/* <SingleNav title={"Home"} address={"/"} handleClick={handleClickLink} /> */}
                         <SingleNav title={"About"} address={"#about"} handleClick={handleClickLink} />
                         <SingleNav title={"Experience"} address={"#experience"} handleClick={handleClickLink} />
                         <SingleNav title={"Projects"} address={"#projects"} handleClick={handleClickLink} />
@@ -39,7 +41,7 @@ export default function Navigation(){
                 {/* end mobile */}
                 {/* large screens */}
                 <ul className='hidden md:flex text-[#3c6e71] gap-6 xl:gap-16 font-medium items-center cursor-pointer'>
-                    <SingleNav title={"Home"} address={"/"} />
+                    {/* <SingleNav title={"Home"} address={"/"} /> */}
                     <SingleNav title={"About"} address={"#about"} />
                     <SingleNav title={"Experience"} address={"#experience"} />
                     <SingleNav title={"Projects"} address={"#projects"} />
