@@ -28,6 +28,7 @@ export default function Navigation(){
                     <ul className="flex flex-col items-center gap-5 text-center pt-24 pb-24 border-b border-[#e6e3e3] shadow-sm left-0 absolute w-full bg-white h-screen">
                         <SingleNav title={"Home"} address={"/"} handleClick={handleClickLink} />
                         <SingleNav title={"About"} address={"#about"} handleClick={handleClickLink} />
+                        <SingleNav title={"Experience"} address={"#experience"} handleClick={handleClickLink} />
                         <SingleNav title={"Projects"} address={"#projects"} handleClick={handleClickLink} />
                         <SingleNav title={"Contact"} address={"#contact"} handleClick={handleClickLink} />
                             <Link onClick={handleClickLink} href={"https://drive.google.com/file/d/1KrU6ds-VLRFjQd50N8qVx64f5iBcUrL7/view?usp=sharing"} target="_blank">
@@ -40,6 +41,7 @@ export default function Navigation(){
                 <ul className='hidden md:flex text-[#3c6e71] gap-6 xl:gap-16 font-medium items-center cursor-pointer'>
                     <SingleNav title={"Home"} address={"/"} />
                     <SingleNav title={"About"} address={"#about"} />
+                    <SingleNav title={"Experience"} address={"#experience"} />
                     <SingleNav title={"Projects"} address={"#projects"} />
                     <SingleNav title={"Contact"} address={"#contact"} />
                     <Link href={"https://drive.google.com/file/d/1KrU6ds-VLRFjQd50N8qVx64f5iBcUrL7/view?usp=sharing"} target="_blank">
