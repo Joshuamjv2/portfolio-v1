@@ -2,8 +2,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default function Footer(){
     return(
-    <footer className="container" id="contact">
-                <div className="text-center pt-32 pb-32 lg:pt-40 lg:pb-40">
+    <footer className="" id="contact">
+                <div className="text-center py-32 px-8 lg:pt-40 lg:pb-40">
                     <h2 className="font-bold text-[#264653] text-2xl md:text-4xl">Get in touch</h2>
                     <p className="my-4 md:my-8 lg:w-1/2 lg:mx-auto md:text-base text-[#2b2d42]">Please reach out to me about collaborations, opportunities, <br/>or just to say hello. I will be glad to hear from you.</p>
                     <ul className="flex justify-center gap-8 md:gap-12">

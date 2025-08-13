@@ -41,8 +41,8 @@ const projects = [
 
 export default function Projects2(){
     return(
-        <section className="container" id="projects">
-            <h2 className="text-3xl md:text-5xl font-bold text-[#264653] mb-8"><span className="text-6xl md:text-8xl text-[#6A040F]"></span>Projects</h2>
+        <section className="" id="projects">
+            <h2 className="text-3xl font-bold text-[#264653] mb-4"><span className="text-6xl text-[#6A040F]"></span>Projects</h2>
 
             <div className="flex flex-col gap-24"> {/* All projects go here. */}
                     {projects.map(project =>
