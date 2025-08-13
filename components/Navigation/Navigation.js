@@ -90,7 +90,7 @@ export default function Navigation(){
             <section className="py-12" id="about">
                 <h2 className="text-3xl font-bold text-[#264653] mb-4"><span className="text-6xl md:text-8xl text-[#6A040F]"></span>About Me</h2>
                 <div className="xl:flex justify-between">
-                    <div className="xl:w-4/5">
+                    <div className="max-w-[800px]">
                         {/* <h3 className="text-[#3c6e71] text-2xl md:text-3xl font-bold pb-2 md:pb-6">My Background</h3> */}
                         <p className="text-[#2b2d42] xl:pr-12 md:text-base lg:pb-0">
                             With more than 4 years of experience, I build solutions with an aim to solve problems and ease operations for businesses, institutions and individuals. The process of building software involves strong collaboration, creativity, learning and self motivation, and this is what always draws me to build things this way.
