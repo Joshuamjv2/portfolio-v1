@@ -75,7 +75,7 @@ export default function Navigation(){
                         <h2 className="text-[#3c6e71] hidden sm:block py-2 text-2xl md:text-4xl xl:text-4xl font-bold">I solve problems with <br></br> <span className="text-[#264653]">Software.</span></h2>
 
                         <p className="text-[#2b2d42] lg:text-base my-4 sm:block max-w-[800px]">
-                            I’m a software engineer who thrives on solving problems through code, creativity, and collaboration. I believe great solutions come from a blend of curiosity, creativity, and hard work and I am always ready to learning whatever is required to get work done.
+                            I’m a software engineer who thrives on solving problems through code, creativity, and collaboration. I believe great solutions come from a blend of curiosity, creativity, and hard work and I am always ready to learn whatever is required to get work done.
                         </p>
 
                         <Link href={"#contact"}><button className="uppercase text-[#6A040F] border-2 p-2 border-[#6A040F] font-bold hover:shadow-md hover:transition-all duration-300 text-base">Contact Me</button></Link>
