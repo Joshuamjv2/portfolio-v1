@@ -3,6 +3,9 @@ import popcorn from "../../public/images/cinema_popcorn.jpg"
 import aichatbot from "../../public/images/aichatbot.jpg"
 import tattoo from "../../public/images/tattoo_shop.jpg"
 import payriz from "../../public/images/payriz.png"
+import ashdeck from "../../public/images/ashdeck.png"
+import ink from "../../public/images/ink.png"
+import oletre from "../../public/images/oletre.png"
 
 const projects = [
     {
@@ -14,20 +17,28 @@ const projects = [
         stack: "FastAPI, MongoDB, AWS Lambda"
     },
     {
+        title: "Ashdeck chrome extension",
+        detail: "Ashdeck is a Chrome extension that replaces the new tab with a focused dashboard. It integrates a calendar, weather, task manager, and a website-blocking Pomodoro timer to minimize distractions and boost productivity directly from the browser. I am a solo developer on this but preparing to open-source it soon.",
+        live: "https://ashdeck.com",
+        // github: "https://github.com/Joshuamjv2/cinema_train",
+        image: ashdeck,
+        stack: "FastAPI, MongoDB, AWS Lambda, React, Javascript, GCP"
+    },
+    {
+        title: "Ink Gallery Tattoo Studio",
+        detail: "I designed and built an appointment booking web application for New Jersey based ink gallery studio to ease the booking flow for their clients. I worked on both the backend and frontend and designed everything as well. The site comes with a dashboard to manage appointments, artists and tattoos that customers can book for.",
+        live: "https://app.inkgallerytattoostudio.com/",
+        // github: "https://github.com/Joshuamjv2/cinema_train",
+        image: ink,
+        stack: "React & Vite, FastAPI, Postgresql, Linux, Typescript"
+    },
+    {
         title: "Payroll application",
         detail: "Built payroll application for Ink Gallery Tattoo Studio in New Jersey, managing backend and frontend operations. This comprehensive tool simplifies artist payments and delivers immediate earnings insights, serving as an indispensable time-saving asset for the owner. Its able to handle multiple shops and soon will be rolled out to other shops.",
         live: "https://tattoo-gallery-payroll.vercel.app",
         // github: "https://github.com/Joshuamjv2/cinema_train",
         image: tattoo,
         stack: "FastAPI, MongoDB, Next Js, AWS Lambda"
-    },
-    {
-        title: "AI Chatbot",
-        detail: "Led the end-to-end development of the backend for AiChatbot, an AI-powered conversational application, marking my first foray into Language Model Models (LLMs). This pioneering project was designed to facilitate seamless information exchange between businesses and customers. ",
-        live: "https://aichatbot.so",
-        // github: "https://github.com/Joshuamjv2/cinema_train",
-        image: aichatbot,
-        stack: "FastAPI, MongoDB, AWS Lambda, Langchain, Openai, Pinecone"
     },
     {
         title: "Cinema Train",
