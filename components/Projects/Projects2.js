@@ -1,72 +1,99 @@
 import Project from "./SingleProject2";
-import popcorn from "../../public/images/cinema_popcorn.jpg"
-import aichatbot from "../../public/images/aichatbot.jpg"
-import tattoo from "../../public/images/tattoo_shop.jpg"
-import payriz from "../../public/images/payriz.png"
-import ashdeck from "../../public/images/ashdeck.png"
-import ink from "../../public/images/ink.png"
-import oletre from "../../public/images/oletre.png"
+
+import popcorn from "../../public/images/cinema_popcorn.jpg";
+import aichatbot from "../../public/images/aichatbot.jpg";
+import tattoo from "../../public/images/tattoo_shop.jpg";
+import payriz from "../../public/images/payriz.png";
+import ashdeck from "../../public/images/ashdeck.png";
+import ink from "../../public/images/ink.png";
+import oletre from "../../public/images/oletre.png";
 
 const projects = [
-    {
-        title: "Payriz",
-        detail: "Payriz is an invoicing and payment application meant to ease payments for businesses. With a team of 3, I was the backend developer for this hackathon project which was ranked 5th. The payment processing in this application was built on top of the paystack API.",
-        live: "https://payriz.vercel.app",
-        // github: "https://github.com/Joshuamjv2/cinema_train",
-        image: payriz,
-        stack: "FastAPI, MongoDB, AWS Lambda"
-    },
-    {
-        title: "Ashdeck chrome extension",
-        detail: "Ashdeck is a Chrome extension that replaces the new tab with a focused dashboard. It integrates a calendar, weather, task manager, and a website-blocking Pomodoro timer to minimize distractions and boost productivity directly from the browser. I am a solo developer on this but preparing to open-source it soon.",
-        live: "https://ashdeck.com",
-        // github: "https://github.com/Joshuamjv2/cinema_train",
-        image: ashdeck,
-        stack: "FastAPI, MongoDB, AWS Lambda, React, Javascript, GCP"
-    },
-    {
-        title: "Ink Gallery Tattoo Studio",
-        detail: "I designed and built an appointment booking web application for New Jersey based ink gallery studio to ease the booking flow for their clients. I worked on both the backend and frontend and designed everything as well. The site comes with a dashboard to manage appointments, artists and tattoos that customers can book for.",
-        live: "https://app.inkgallerytattoostudio.com/",
-        // github: "https://github.com/Joshuamjv2/cinema_train",
-        image: ink,
-        stack: "React & Vite, FastAPI, Postgresql, Linux, Typescript"
-    },
-    {
-        title: "Payroll application",
-        detail: "Built payroll application for Ink Gallery Tattoo Studio in New Jersey, managing backend and frontend operations. This comprehensive tool simplifies artist payments and delivers immediate earnings insights, serving as an indispensable time-saving asset for the owner. Its able to handle multiple shops and soon will be rolled out to other shops.",
-        live: "https://tattoo-gallery-payroll.vercel.app",
-        // github: "https://github.com/Joshuamjv2/cinema_train",
-        image: tattoo,
-        stack: "FastAPI, MongoDB, Next Js, AWS Lambda"
-    },
-    {
-        title: "Cinema Train",
-        detail: "Designed and developed a comprehensive movie database application from the ground up, showcasing a strong command of both frontend and backend technologies. The project aimed to fetch and display movies from TMDB, serving as a valuable exercise to refine my frontend and design skills.",
-        live: "https://cinema-train.vercel.app",
-        github: "https://github.com/Joshuamjv2/cinema_train",
-        image: popcorn,
-        stack: "NextJs, FastAPI, MongoDB"
-    }
-]
+  {
+    title: "Ink Gallery Tattoo Studio",
+    detail:
+      "Designed and built a full-stack booking platform for a tattoo studio in New Jersey. The application lets customers browse tattoo designs and book appointments, while a custom dashboard helps the studio manage artists, designs, and bookings. I handled both frontend and backend development.",
+    live: "https://app.inkgallerytattoostudio.com/",
+    github: "https://github.com/Joshuamjv2/tattoo_gallery",
+    image: ink,
+    stack: "React, TypeScript, FastAPI, PostgreSQL, MongoDB, Redis, GCP",
+  },
+  {
+    title: "Paidrole",
+    detail:
+      "Built a payroll platform for businesses working with independent professionals, including tattoo artists and barbers. It tracks individual payments, calculates shop commissions, and provides earnings summaries across custom date ranges. The system supports multiple shops and simplifies day-to-day payroll management.",
+    live: "https://paidrole.com",
+    github: "https://github.com/Joshuamjv2/tatoo_gallery_payroll",
+    image: tattoo,
+    stack: "FastAPI, MongoDB, Redis, React, Next.js",
+  },
+  {
+    title: "Ashdeck",
+    detail:
+      "Developed a Chrome extension that turns the new tab into a productivity dashboard. It combines a task manager, calendar, weather, and a website-blocking Pomodoro timer to help users stay focused without leaving their browser. I built the product as a solo developer.",
+    live: "https://ashdeck.com",
+    image: ashdeck,
+    stack: "React, JavaScript, FastAPI, MongoDB, Redis, WebSockets",
+  },
+  {
+    title: "Flystep",
+    detail:
+      "A mobile application that connects to a workout device over Bluetooth Low Energy and synchronizes device data with the backend. The project brings together mobile development, hardware communication, and backend integration.",
+    live: "https://apps.apple.com/us/app/flystep/id6812098710",
+    image: aichatbot,
+    stack: "React Native, Bluetooth LE, API integration",
+  },
+  {
+    title: "Vending Machine Monitor",
+    detail:
+      "Built and maintained a Django backend that communicates with more than 100 vending machines in France over a custom TCP protocol. The system monitors stock levels and identifies inactive or potentially faulty machines.",
+    github: "https://github.com/Joshuamjv2/vending_machines_monitor",
+    image: ink,
+    stack: "Python, Django, TCP, PostgreSQL",
+  },
+  {
+    title: "Olrelaluce Lamp Controller",
+    detail:
+      "Developed a connected lamp control system using MQTT, with timed operation and automatic shutoff when the configured ozone limit is reached. The platform also includes QR-based device onboarding and customer-facing workflows.",
+    github: "https://github.com/Joshuamjv2/advance_lamps",
+    image: oletre,
+    stack: "Python, MQTT, IoT, Backend development",
+  },
+  {
+    title: "Payriz",
+    detail:
+      "Built the backend for an invoicing and payments platform that helps businesses send invoices, collect customer payments, and pay suppliers. I worked in a team of three during a hackathon, where the project placed fifth. Payment processing was integrated through the Paystack API.",
+    live: "https://payriz.vercel.app/",
+    github: "https://github.com/Joshuamjv2/payriz",
+    image: payriz,
+    stack: "FastAPI, MongoDB, AWS Lambda, Paystack",
+  },
+  {
+    title: "Cinema Train",
+    detail:
+      "Designed and developed a movie discovery application using data from TMDB. Built to explore full-stack development and improve my frontend and interface design skills, the project combines a movie browsing experience with a custom backend.",
+    live: "https://cinema-train.vercel.app",
+    github: "https://github.com/Joshuamjv2/cinema_train",
+    image: popcorn,
+    stack: "Next.js, FastAPI, MongoDB, TMDB API",
+  },
+];
 
-export default function Projects2(){
-    return(
-        <section className="" id="projects">
-            <h2 className="text-3xl font-bold text-[#264653] mb-4"><span className="text-6xl text-[#6A040F]"></span>Projects</h2>
+export default function Projects2() {
+  return (
+    <section id="projects">
+      <h2 className="mb-4 text-3xl font-bold text-[#264653]">
+        Projects
+      </h2>
 
-            <div className="flex flex-col gap-24"> {/* All projects go here. */}
-                    {projects.map(project =>
-                        <Project
-                            title={project.title}
-                            detail={project.detail}
-                            github={project.github}
-                            live={project.live}
-                            image={project.image}
-                            stack={project.stack}
-                        />
-                    )}
-            </div>
-        </section>
-    )
+      <div className="flex flex-col gap-16 sm:gap-24">
+        {projects.map((project) => (
+          <Project
+            key={project.title}
+            {...project}
+          />
+        ))}
+      </div>
+    </section>
+  );
 }
