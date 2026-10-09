@@ -3,50 +3,105 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Project({ title, detail, live, image, stack, github = null }) {
+// Reuse an existing project image when no specific image is provided.
+import placeholder from "../../public/images/ink.png";
+
+export default function Project({
+  title,
+  detail,
+  live,
+  image,
+  stack,
+  github = null,
+}) {
+  const projectImage = image || placeholder;
+
+  const technologies = Array.isArray(stack)
+    ? stack
+    : (stack || "")
+        .split(",")
+        .map((technology) => technology.trim())
+        .filter(Boolean);
+
   return (
-    <div className="flex flex-col sm:flex-row sm:gap-8 lg:gap-12 md:items-center">
-      {/* Image Container */}
-      <div className="relative sm:w-1/3 md:w-1/2 max-w-[350px] aspect-[4/3] overflow-hidden border">
-        <Link href={live}>
-          <Image
-            src={image}
-            alt={title}
-            fill
-            className="object-cover transition-transform duration-300 cursor-pointer"
-            sizes="(max-width: 768px) 100vw, 33vw"
-          />
-        </Link>
+    <article className="grid gap-5 sm:grid-cols-2 sm:items-center sm:gap-8 lg:gap-12">
+      {/* Project image */}
+      <div className="relative aspect-[4/3] w-full max-w-[500px] overflow-hidden rounded-lg bg-gray-100">
+        <Image
+          src={projectImage}
+          alt={`${title} project preview`}
+          fill
+          sizes="(max-width: 640px) 100vw, 50vw"
+          className="object-cover transition-transform duration-300 hover:scale-[1.03]"
+        />
       </div>
 
-      {/* Text Content */}
-      <div className="pt-4 sm:pt-0 sm:w-2/3 md:w-1/2">
-        <h2 className="text-[#3c6e71] text-xl lg:text-2xl font-bold lg:mb-6">
+      {/* Project details */}
+      <div className="min-w-0">
+        <h3 className="text-xl font-bold text-[#3c6e71] lg:text-2xl">
           {title}
-          {github && (
-            <Link href={github}>
-              <FontAwesomeIcon
-                icon={['fab', 'github']}
-                className="px-4"
-                style={{ fontSize: 18, color: "#6A040F" }}
-              />
-            </Link>
-          )}
-          {live && (
-            <Link href={live}>
-              <FontAwesomeIcon
-                icon={['fa', 'external-link']}
-                className="px-4"
-                style={{ fontSize: 18, color: "#6A040F" }}
-              />
-            </Link>
-          )}
-        </h2>
-        <p className="lg:mb-6 my-2 md:my-0 md:mb-1">{detail}</p>
-        <p className="text-[#3c6e71] font-semibold">
-          Stack: <span className="font-semibold text-[#000]">{stack}</span>
+        </h3>
+
+        <p className="my-3 text-sm leading-7 text-gray-700 sm:text-base">
+          {detail}
         </p>
+
+        {/* Technology stack */}
+        {technologies.length > 0 && (
+          <div className="mt-4">
+            <p className="mb-2 text-sm font-semibold text-[#3c6e71]">
+              Technologies
+            </p>
+
+            <ul className="flex flex-wrap gap-2">
+              {technologies.map((technology) => (
+                <li
+                  key={technology}
+                  className="rounded-md bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-700"
+                >
+                  {technology}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {/* Project links */}
+        <div className="mt-5 flex items-center gap-5">
+          {live && (
+            <Link
+              href={live}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Visit ${title} live website`}
+              className="inline-flex items-center gap-2 text-sm font-semibold text-[#6A040F] transition-colors hover:text-[#3c6e71]"
+            >
+              Live project
+              <FontAwesomeIcon
+                icon={["fa", "external-link"]}
+                aria-hidden="true"
+              />
+            </Link>
+          )}
+
+          {github && (
+            <Link
+              href={github}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`View ${title} source code on GitHub`}
+              className="inline-flex items-center gap-2 text-sm font-semibold text-[#6A040F] transition-colors hover:text-[#3c6e71]"
+            >
+              Source code
+              <FontAwesomeIcon
+                icon={["fab", "github"]}
+                aria-hidden="true"
+              />
+            </Link>
+          )}
+        </div>
       </div>
-    </div>
+    </article>
   );
 }
+
