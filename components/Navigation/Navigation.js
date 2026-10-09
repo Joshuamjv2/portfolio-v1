@@ -1,137 +1,244 @@
-import Image from "next/image"
-import logo from "../../public/images/josh-logo-done2.png"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Projects from "../Projects/Projects";
-import Projects2 from "../Projects/Projects2";
-import Skill from "../Skill";
+import Image from "next/image";
+import logo from "../../public/images/josh-logo-done2.png";
 import Link from "next/link";
-import SingleNav from "./SingleNav";
 import { useState } from "react";
+import Projects2 from "../Projects/Projects2";
+import SingleNav from "./SingleNav";
 import Footer from "../Footer/Footer";
 import Experience from "../Experience/Experience";
 
-export default function Navigation(){
-    const [burgerOpen, setBurgerOpen] = useState(false)
+export default function Navigation() {
+  const [burgerOpen, setBurgerOpen] = useState(false);
 
-    const handleOnClickBurger = () => setBurgerOpen(!burgerOpen)
+  const handleOnClickBurger = () => {
+    setBurgerOpen(!burgerOpen);
+  };
 
-    const handleClickLink = () => burgerOpen == true && setBurgerOpen(!burgerOpen)
+  const handleClickLink = () => {
+    if (burgerOpen) setBurgerOpen(false);
+  };
 
-    return (
+  const resumeUrl =
+    "https://drive.google.com/file/d/1KrU6ds-VLRFjQd50N8qVx64f5iBcUrL7/view?usp=sharing";
+
+  return (
     <>
-        <div className="">
-            {/* Navigation  */}
-            <div className='flex items-center justify-between px-4 sm:px-8 py-4 bg-white shadow-sm fixed w-full z-10'>
-                <a href="" className="z-10">
-                    <Image src={logo} height={70} className="h-8 sm:h-12 w-auto"/>
+      <div>
+        {/* Navigation */}
+        <nav className="fixed z-10 flex w-full items-center justify-between bg-white px-4 py-4 shadow-sm sm:px-8">
+          <Link href="/" className="z-10" aria-label="Home">
+            <Image
+              src={logo}
+              alt="Joshua Muwanguzi logo"
+              height={70}
+              priority
+              className="h-8 w-auto sm:h-12"
+            />
+          </Link>
+
+          {/* Mobile navigation */}
+          {burgerOpen && (
+            <div className="absolute left-0 top-full w-full bg-white md:hidden">
+              <ul className="flex min-h-screen flex-col items-center gap-5 border-b border-[#e6e3e3] py-24 text-center shadow-sm">
+                <SingleNav
+                  title="About"
+                  address="#about"
+                  handleClick={handleClickLink}
+                />
+                <SingleNav
+                  title="Experience"
+                  address="#experience"
+                  handleClick={handleClickLink}
+                />
+                <SingleNav
+                  title="Projects"
+                  address="#projects"
+                  handleClick={handleClickLink}
+                />
+                <SingleNav
+                  title="Contact"
+                  address="#contact"
+                  handleClick={handleClickLink}
+                />
+
+                <li>
+                  <Link
+                    onClick={handleClickLink}
+                    href={resumeUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block border-2 border-[#6A040F] p-2 text-sm font-bold text-[#6A040F] transition-all duration-300 hover:shadow-md sm:px-24"
+                  >
+                    Resume
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          )}
+
+          {/* Desktop navigation */}
+          <ul className="hidden items-center gap-6 font-medium text-[#3c6e71] md:flex xl:gap-12">
+            <SingleNav title="About" address="#about" />
+            <SingleNav title="Experience" address="#experience" />
+            <SingleNav title="Projects" address="#projects" />
+            <SingleNav title="Contact" address="#contact" />
+
+            <li>
+              <Link
+                href={resumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block border-2 border-[#6A040F] p-2 text-sm font-bold uppercase text-[#6A040F] transition-all duration-300 hover:shadow-md"
+              >
+                Resume
+              </Link>
+            </li>
+          </ul>
+
+          {/* Mobile menu button */}
+          <button
+            type="button"
+            onClick={handleOnClickBurger}
+            aria-label={burgerOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-expanded={burgerOpen}
+            className="hamburger relative z-10 block cursor-pointer md:hidden"
+          >
+            <span
+              className="bar"
+              style={{
+                transform: burgerOpen
+                  ? "rotate(45deg) translate(12px)"
+                  : "",
+              }}
+            />
+            <span
+              className="bar"
+              style={{
+                opacity: burgerOpen ? 0 : 1,
+                transition: "opacity 40ms",
+              }}
+            />
+            <span
+              className="bar"
+              style={{
+                transform: burgerOpen
+                  ? "rotate(-45deg) translate(12px)"
+                  : "",
+              }}
+            />
+          </button>
+        </nav>
+
+        {/* Hero section */}
+        <header className="mx-auto h-screen max-w-[1200px] px-4 sm:px-8 lg:px-16">
+          <div className="flex h-full items-center">
+            <div>
+              <h5 className="mb-2 font-semibold text-[#6A040F] md:text-xl xl:text-2xl">
+                Hello, my name is
+              </h5>
+
+              <h1 className="text-3xl font-bold uppercase text-[#264653] sm:text-5xl">
+                Muwanguzi Joshua
+              </h1>
+
+              <h2 className="py-2 text-2xl font-bold text-[#3c6e71] sm:text-3xl md:text-4xl">
+                I build software that solves real problems.
+              </h2>
+
+              <p className="my-4 max-w-[800px] leading-7 text-[#2b2d42]">
+                I&apos;m a full-stack software developer with over five years
+                of experience building web and mobile applications, backend
+                systems, and software that connects with physical devices. I
+                enjoy working across the stack, figuring out how things should
+                work, and taking products from an idea to something people can
+                actually use.
+              </p>
+
+              <div className="mt-6 flex flex-wrap gap-4">
+                <Link
+                  href="#projects"
+                  className="border-2 border-[#264653] bg-[#264653] px-4 py-3 font-bold uppercase text-white transition hover:opacity-90"
+                >
+                  View my work
+                </Link>
+
+                <Link
+                  href="#contact"
+                  className="border-2 border-[#6A040F] px-4 py-3 font-bold uppercase text-[#6A040F] transition hover:shadow-md"
+                >
+                  Get in touch
+                </Link>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+
+      <main className="mx-auto max-w-[1200px] px-4 sm:px-8 lg:px-16">
+        {/* About section */}
+        <section className="py-12" id="about">
+          <h2 className="mb-4 text-3xl font-bold text-[#264653]">
+            About Me
+          </h2>
+
+          <div className="xl:flex xl:justify-between">
+            <div className="max-w-[800px]">
+              <p className="text-[#2b2d42] xl:pr-12 md:text-base">
+                I&apos;m a software developer who enjoys figuring out how
+                things work and building things that make life a little easier.
+                Over the past five years, I&apos;ve worked on everything from
+                backend platforms and business applications to mobile apps
+                that communicate with physical hardware.
+
+                <br />
+                <br />
+
+                I currently work at{" "}
+                <a
+                  href="https://www.seere.cloud"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-bold text-[#6A040F] hover:underline"
+                >
+                  Seere SRL
                 </a>
-                {/* mobile */}
-                {burgerOpen && !burgerOpen == 0 && <div className="w-screen md:hidden">
-                    <ul className="flex flex-col items-center gap-5 text-center py-24 border-b border-[#e6e3e3] shadow-sm bg-white left-0 absolute w-full h-screen">
-                        {/* <SingleNav title={"Home"} address={"/"} handleClick={handleClickLink} /> */}
-                        <SingleNav title={"About"} address={"#about"} handleClick={handleClickLink} />
-                        <SingleNav title={"Experience"} address={"#experience"} handleClick={handleClickLink} />
-                        <SingleNav title={"Projects"} address={"#projects"} handleClick={handleClickLink} />
-                        <SingleNav title={"Contact"} address={"#contact"} handleClick={handleClickLink} />
-                            <Link onClick={handleClickLink} href={"https://drive.google.com/file/d/1KrU6ds-VLRFjQd50N8qVx64f5iBcUrL7/view?usp=sharing"} target="_blank">
-                            <li className="border-2 p-2 border-[#6A040F] text-[#6A040F] font-bold hover:shadow-md hover:transition-all duration-300 text-sm md:text-base sm:px-24">Resume</li>
-                        </Link>
-                    </ul>
-                </div>}
-                {/* end mobile */}
-                {/* large screens */}
-                <ul className='hidden md:flex text-[#3c6e71] gap-6 xl:gap-16 font-medium items-center cursor-pointer'>
-                    {/* <SingleNav title={"Home"} address={"/"} /> */}
-                    <SingleNav title={"About"} address={"#about"} />
-                    <SingleNav title={"Experience"} address={"#experience"} />
-                    <SingleNav title={"Projects"} address={"#projects"} />
-                    <SingleNav title={"Contact"} address={"#contact"} />
-                    <Link href={"https://drive.google.com/file/d/1KrU6ds-VLRFjQd50N8qVx64f5iBcUrL7/view?usp=sharing"} target="_blank">
-                        <li className="border-2 p-2 uppercase border-[#6A040F] text-[#6A040F] font-bold hover:shadow-md hover:transition-all duration-300 text-sm ">Resume</li>
-                    </Link>
-                </ul>
-                <div onClick={handleOnClickBurger} className="hamburger relative cursor-pointer block md:hidden">
-                {/* check global.css for more styles on this */}
-                    <span className="bar" style={{
-                        transform: burgerOpen ? 'rotate(45deg) translate(12px': ""
-                    }}></span>
-                    <span className="bar" style={{
-                        opacity: burgerOpen ? 0: "",
-                        transition: "opacity 40ms"
+                , where I build software around hardware integrations and
+                connected systems. My work spans frontend and backend
+                development, databases, third-party services, and deployment.
+                I&apos;ve also had the opportunity to take ownership of
+                systems, make architectural decisions, and work through the
+                less obvious problems that come with running software in
+                production.
 
-                    }}></span>
-                    <span className="bar" style={{
-                        transform: burgerOpen ? 'rotate(-45deg) translate(12px)': "",
-                        // transform: burgerOpen ? 'translateY(6px)': ""
-                    }}></span>
-                </div>
+                <br />
+                <br />
+
+                I&apos;m comfortable learning whatever a problem requires. I
+                don&apos;t expect to know every tool before I start; I care
+                about understanding the problem, making sound decisions, and
+                seeing the work through.
+
+                <br />
+                <br />
+
+                Outside of software, I enjoy getting lost in a good book,
+                taking pictures with my camera, and finding music that fits
+                the moment. There&apos;s a lot to appreciate away from a
+                screen, too.
+              </p>
             </div>
-            {/* Hero section */}
-            <div className="h-screen max-w-[1200px] px-4 sm:px-[2rem] lg:px-[4rem] mx-auto">
-                <div className="flex items-center h-full">
-                    <div className="">
-                        <h5 className="mb-2 text-[#6A040F] font-semibold md:text-xl xl:text-2xl">Hello, my name is</h5>
-                        <h1 className="uppercase font-bold text-[#264653] text-3xl sm:text-5xl">Muwanguzi Joshua</h1>
-                        <h2 className="text-[#3c6e71] hidden sm:block py-2 text-2xl md:text-4xl xl:text-4xl font-bold">I solve problems with <br></br> <span className="text-[#264653]">Software.</span></h2>
+          </div>
+        </section>
 
-                        <p className="text-[#2b2d42] lg:text-base my-4 sm:block max-w-[800px]">
-                            I’m a software engineer with over four years of experience delivering products that bridge hardware and software across IoT, fintech, SaaS, and AI. I specialize in building scalable systems, real-time applications, and seamless integrations, turning complex challenges into impactful solutions.
-                        </p>
+        {/* Experience */}
+        <Experience />
 
-                        <Link href={"#contact"}><button className="uppercase text-[#6A040F] border-2 p-2 border-[#6A040F] font-bold hover:shadow-md hover:transition-all duration-300 text-base">Contact Me</button></Link>
-                    </div>
-                </div>
-            </div>
-        </div>
+        {/* Projects */}
+        <Projects2 />
+      </main>
 
-
-        <main className="px-4 sm:px-[2rem] max-w-[1200px] lg:px-[4rem] mx-auto">
-        {/* About Section */}
-            <section className="py-12" id="about">
-                <h2 className="text-3xl font-bold text-[#264653] mb-4"><span className="text-6xl md:text-8xl text-[#6A040F]"></span>About Me</h2>
-                <div className="xl:flex justify-between">
-                    <div className="max-w-[800px]">
-                        {/* <h3 className="text-[#3c6e71] text-2xl md:text-3xl font-bold pb-2 md:pb-6">My Background</h3> */}
-                        <p className="text-[#2b2d42] xl:pr-12 md:text-base lg:pb-0">
-                            With more than 4 years of experience, I build solutions with an aim to solve problems and ease operations for businesses, institutions and individuals. The process of building software involves strong collaboration, creativity, learning and self motivation, and this is what always draws me to build things this way.
-                            <br />
-                            <br />
-                            I am currently focussed on building multiple solutions for hardware integrations  <span className="text-[#6a040f] font-bold"><a href="https://www.seere.cloud" target="_blank">Seere SRL</a></span> as a full stack software developer.
-                            I believe in tackling problems head-on, no matter the tools required. If I don’t know something, I see it as an opportunity to learn it, master it, and get the job done.
-                            <br />
-                            <br />
-                            When I’m not deep in code, you’ll find me lost in a good book, out taking pictures with my camera, and letting beautiful music set the mood.
-                        </p>
-                    </div>
-                    <div className="mt-8 xl:mt-0 xl:w-1/2 hidden">
-                        {/* <h3 className="text-[#3c6e71] text-2xl md:text-3xl font-bold pb-2 md:pb-6">My Skills</h3> */}
-                        <ul className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                            <Skill skill={"React"} />
-                            <Skill skill={"Python"} />
-                            <Skill skill={"Javascript"} />
-                            <Skill skill={"Typescript"} />
-                            <Skill skill={"AWS"}/>
-                            <Skill skill={"Integrations"} />
-                            <Skill skill={"CI/CD"} />
-                            <Skill skill={"Testing"} />
-                            <Skill skill={"Linux"} />
-                            <Skill skill={"Fast API"} />
-                            <Skill skill={"Django"} />
-                            <Skill skill={"SQL & NoSQL"} />
-                            <Skill skill={"GraphQl"} />
-                            <Skill skill={"Docker"} />
-                            <Skill skill={"Next Js"} />
-                            <Skill skill={"GitHub"} />
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            {/* <Projects /> */}
-            <Experience />
-            <Projects2 />
-        </main>
-        <Footer />
+      <Footer />
     </>
-    )
+  );
 }
+
