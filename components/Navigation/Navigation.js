@@ -169,7 +169,7 @@ export default function Navigation() {
         </header>
       </div>
 
-      <main className="mx-auto max-w-[1200px] px-4 sm:px-8 lg:px-16">
+      <main className="mx-auto max-w-[1200px] px-4 sm:px-8 lg:px-16 hidden">
         <section className="scroll-mt-20 py-8 sm:py-12" id="about">
           <h2 className="mb-4 text-3xl font-bold text-[#264653]">
             About Me
