@@ -8,6 +8,7 @@ import ashdeck from "../../public/images/ashdeck.png";
 import ink from "../../public/images/ink.png";
 import oletre from "../../public/images/oletre.png";
 import vending_machine from "../../public/images/vending_machine.png"
+import flystep from "../../public/images/flystep.png"
 
 const projects = [
   {
@@ -41,7 +42,7 @@ const projects = [
     detail:
       "A mobile application that connects to a workout device over Bluetooth Low Energy and synchronizes device data with the backend.",
     live: "https://apps.apple.com/us/app/flystep/id6812098710",
-    image: aichatbot,
+    image: flystep,
     stack: "React Native, Bluetooth LE, API integration",
   },
   {
