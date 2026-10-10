@@ -7,6 +7,7 @@ import payriz from "../../public/images/payriz.png";
 import ashdeck from "../../public/images/ashdeck.png";
 import ink from "../../public/images/ink.png";
 import oletre from "../../public/images/oletre.png";
+import vending_machine from "../../public/images/vending_machine.png"
 
 const projects = [
   {
@@ -48,7 +49,7 @@ const projects = [
     detail:
       "Built and maintained a Django backend communicating with more than 100 vending machines in France over a custom TCP protocol. It monitors stock levels and identifies inactive or faulty machines.",
     github: "https://github.com/Joshuamjv2/vending_machines_monitor",
-    image: ink,
+    image: vending_machine,
     stack: "Python, Django, TCP, PostgreSQL",
   },
   {
