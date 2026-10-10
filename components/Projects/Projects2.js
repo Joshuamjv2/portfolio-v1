@@ -9,6 +9,7 @@ import ink from "../../public/images/ink.png";
 import oletre from "../../public/images/oletre.png";
 import vending_machine from "../../public/images/vending_machine.png"
 import flystep from "../../public/images/flystep.png"
+import paidrole from "../../public/images/paidrole.png"
 
 const projects = [
   {
@@ -26,7 +27,7 @@ const projects = [
       "Built a payroll platform for businesses working with independent professionals. It tracks payments, calculates shop commissions, and summarizes earnings across multiple shops.",
     live: "https://paidrole.com",
     github: "https://github.com/Joshuamjv2/tatoo_gallery_payroll",
-    image: tattoo,
+    image: paidrole,
     stack: "FastAPI, MongoDB, Redis, React, Next.js",
   },
   {
