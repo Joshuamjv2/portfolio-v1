@@ -39,11 +39,6 @@ export default function Navigation() {
           {burgerOpen && (
             <div className="absolute left-0 top-full max-h-[calc(100dvh-4rem)] w-full overflow-y-auto bg-white md:hidden">
               <ul className="flex min-h-[calc(100dvh-4rem)] flex-col items-center gap-5 border-b border-[#e6e3e3] px-4 py-12 text-center shadow-sm">
-                // <SingleNav
-                //   title="About"
-                //   address="#about"
-                //   handleClick={handleClickLink}
-                // />
                 <SingleNav
                   title="Experience"
                   address="#experience"
@@ -76,7 +71,6 @@ export default function Navigation() {
           )}
 
           <ul className="hidden items-center gap-6 font-medium text-[#3c6e71] md:flex xl:gap-12">
-            // <SingleNav title="About" address="#about" />
             <SingleNav title="Experience" address="#experience" />
             <SingleNav title="Projects" address="#projects" />
             <SingleNav title="Contact" address="#contact" />
