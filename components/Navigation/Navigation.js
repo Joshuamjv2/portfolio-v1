@@ -20,7 +20,7 @@ export default function Navigation() {
   };
 
   const resumeUrl =
-    "https://drive.google.com/file/d/1KrU6ds-VLRFjQd50N8qVx64f5iBcUrL7/view?usp=sharing";
+    "https://drive.google.com/file/d/1KYyDplUa4tS5bTb2L7gOzIDF9yXxD24-/view?usp=sharing";
 
   return (
     <>
